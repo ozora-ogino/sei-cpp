@@ -36,7 +36,7 @@ export const Contact = () => {
     <Wrapper>
       <Header />
       <IntroWrapper as={Container}>
-        <Details language={intl.locale}>
+        <Details>
         <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
           <h3 style={{textAlign: "center"}}>Thanks for taking the time to reach out. </h3>
           <h3 style={{textAlign: "center"}}>How can I help you today?</h3>
