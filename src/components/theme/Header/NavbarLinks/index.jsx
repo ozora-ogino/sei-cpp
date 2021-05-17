@@ -18,6 +18,7 @@ const NavbarLinks = ({ desktop }) => {
       <Link  to={"/"}  activeStyle={current} >Home</Link>
       <Link  to={"/news"} activeStyle={current}  >News</Link>
       <Link  to={"/seminar"} activeStyle={current}  >Seminar</Link>
+      <Link  to={"/contact"} activeStyle={current}  >Contact</Link>
       {/* <AnchorLink href="#projects">Projects</AnchorLink>
       <AnchorLink href="#contact">Contact</AnchorLink> */}
     </Wrapper>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import { Header } from 'components/theme';
 import { Container, Button } from 'components/common';
 import { Wrapper, IntroWrapper, Details, Cover, Card } from './styles';
@@ -29,7 +30,7 @@ export const Intro = () => {
                 <li><img src={ba} /></li>
               </ul>
               <h3>カルフォルニアでBAやAgileを学んでみませんか？</h3>
-              <Button>Contact</Button>
+              <Link to={'/contact'}><Button>お問い合わせ</Button></Link>
             </Card>
         </Details>
       </IntroWrapper>

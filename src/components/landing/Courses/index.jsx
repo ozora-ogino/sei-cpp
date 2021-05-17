@@ -1,6 +1,6 @@
 import React from 'react';
-import { Container, CourseCard } from 'components/common';
 import { Link } from 'gatsby';
+import { Container, CourseCard } from 'components/common';
 import { Wrapper, Grid, Item, Content, Title, Button } from './styles';
 
 export const  Courses = (props) => {
