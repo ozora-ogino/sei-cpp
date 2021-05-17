@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Container } from 'components/common';
 import { Wrapper, IntroWrapper, Details, Thumbnail, Greeting } from './styles';
+import { Header } from 'components/theme';
+
 
 export const Contact = () => {
   const [name, setName] = useState(""); 
