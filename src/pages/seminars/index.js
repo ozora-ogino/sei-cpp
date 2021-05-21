@@ -37,11 +37,11 @@ export default () => {
     ]
 
     const teachers = [
-        // { img: erik, name: 'Erik Rolland Dean', job: 'College of Business Administration' },
+        { img: erik, name: 'Erik Rolland Dean', job: 'College of Business Administration' },
         { img: aytug, name: 'Zeynep Aytug', job: 'Management & human Resources College of Business' },
         { img: pike, name: 'Roland Pike', job: 'Leader of Digital Transformation and Block Chain Cente' },
         { img: isshiki, name: 'Koichiro Isshiki', job: 'Organizer of this Seminar' },
-        { img: mohammad, name: 'Mohammad Salehan', job: 'BI/Analytics ' },
+        // { img: mohammad, name: 'Mohammad Salehan', job: 'BI/Analytics ' },
     ]
 
     return (

@@ -4,12 +4,24 @@ import { Layout, SEO } from 'components/common';
 import { Intro, Courses, News, Companies } from 'components/landing';
 import google from 'assets/company-logos/google.png'
 import ms from 'assets/company-logos/ms.jpg'
+import uber from 'assets/company-logos/uber.png'
+import amazon from 'assets/company-logos/amazon.webp'
+import disney from 'assets/company-logos/disney.png'
+import drivemode from 'assets/company-logos/drivemode.png'
+import esri from 'assets/company-logos/esri.png'
+import auriq from 'assets/company-logos/auriq.png'
 
 export default ({ data }) => {
 
   const companies = [
-    { img: google, size: "100" },
     { img: ms, size: "240" },
+    { img: google, size: "100" },
+    { img: amazon, size: "200" },
+    { img: uber, size: "200" },
+    { img: disney, size: "240" },
+    { img: drivemode, size: "240" },
+    { img: esri, size: "200" },
+    { img: auriq, size: "200" },
   ]
 
   const courses = [

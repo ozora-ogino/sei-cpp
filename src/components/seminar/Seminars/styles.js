@@ -95,22 +95,31 @@ export const Button = styled.button`
 
 
 export const Card = styled.div`
-  padding: 1rem;
+  display:flex;
+  justify-content:center; 
+  align-items: center;
+  padding: 0 2rem;
+  padding-top: 2rem;
   background: #ffffff;
   height: 100%;
   border: solid 1px #cfd8dc;
   border-radius: .3rem;
+  margin-bottom: 3rem;
 
   h4 {
     color: #212121;
   }
 
   p {
+    text-align: left;
     color: #212121;
   }
   
   a {
     color: #212121;
+  }
+  img {
+    margin-right: 2rem;
   }
   @media (max-width: 680px) {
     border-radius: 0;

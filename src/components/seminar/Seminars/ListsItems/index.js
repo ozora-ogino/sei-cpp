@@ -13,10 +13,14 @@ const Wrapper = styled.div`
     padding: 1rem;
     h3 {
         margin-top: 1rem;
+        padding-bottom: .5rem;
+        border-bottom: 1px solid #cfd8dc;
     }
     ul {
         list-style: none;
+        margin-bottom: 0;
     }
+    padding-bottom: 0;
 `;
 
 export const ListItems = (props) => {
@@ -35,18 +39,21 @@ export const ListItems = (props) => {
 
 const TargetWrapper = styled.div`
     background: #ffffff;
-    border: solid 4px #00acc1;
+    // border: solid 3px #00acc1;
+    border: solid 1px #cfd8dc;
     border-radius: .3rem;
-    max-width: 800px;
+    // max-width: 800px;
     margin: auto;
     padding: 1rem;
     h3 {
-        margin-top: 0.4rem;
+        margin-top: 1rem;
         padding-bottom: .5rem;
-        border-bottom: 1px solid #00acc1;
+        // border-bottom: 1px solid #00acc1;
+        border-bottom: 1px solid #cfd8dc;
     }
     ul {
         list-style: none;
+        margin-bottom: 0;
     }
 `;
 
