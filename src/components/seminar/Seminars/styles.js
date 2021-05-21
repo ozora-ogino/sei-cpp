@@ -1,29 +1,33 @@
 import styled from 'styled-components';
 
+export const Top = styled.div`
+`;
+
 export const Wrapper = styled.div`
-  padding-bottom: 4rem;
+  padding: 4rem;
   text-align: center;
 `;
 
 export const Title = styled.div`
   text-align: center;
-  padding-bottom: 1.4rem;
+  padding: 1.8rem;
   h2 {
+    color: #37474f;
     font-size: 22pt,
   }
 `;
 
 export const Grid = styled.div`
   display: grid;
-  align-items: center;
   text-align: center;
-  // grid-template-columns: ${({ len }) => `repeat(` + len + `, 1fr)`};
-  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  grid-template-columns: repeat(1, 1fr);
   grid-template-rows: 8fr;
-  gap: 4rem 1.2rem;
+  gap: 4.0rem 1.0rem;
+  margin-bottom: 1rem;
 
   @media (max-width: 960px) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 
   @media (max-width: 680px) {
@@ -34,34 +38,33 @@ export const Grid = styled.div`
 export const Item = styled.div`
   width: 100%;
   height: 100%;
+  // overflow: hidden;
+  // box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.11);
 
   @media (max-width: 680px) {
+    overflow: hidden;
+    box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.11);
   }
 
   h4 {
-    color: #212121;
-    font-size: 1rem;
+    color: #424242;
   }
 
   p {
-    padding: 0.1rem;
-    color: #707070;
+    color: #424242;
   }
 `;
 
 export const Content = styled.div`
-  padding: 1.4rem 0;
-  min-height: 140px;
-  h4 {
-    color: #37474f;
-  }
+  padding: 1rem 0;
+  min-height: 80px;
 `;
 
 export const Button = styled.button`
   cursor: pointer;
   border-radius: 3px;
   padding: 0.4rem 2.5rem;
-  margin-top: 2rem;
+  // margin-top: 2rem;
   border: none;
   -webkit-appearance: none;
   -webkit-touch-callout: none;
@@ -87,9 +90,9 @@ export const Button = styled.button`
 	`}
 `;
 
-export const CourseCard = styled.div`
-  padding: 0 1rem;
-  padding-top: 1rem;
+
+export const Card = styled.div`
+  padding: 1rem;
   background: #ffffff;
   height: 100%;
   border: solid 1px #cfd8dc;
@@ -106,10 +109,10 @@ export const CourseCard = styled.div`
   a {
     color: #212121;
   }
-
+  @media (max-width: 680px) {
+    border-radius: 0;
+    border: none;
+  }
 `;
 
-export const Long = styled.div`
-  text-align: center;
-  margin-top: 3rem;
-`;
+

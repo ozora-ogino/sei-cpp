@@ -1,5 +1,5 @@
 import React from 'react';
-// import { graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import { Layout, SEO } from 'components/common';
 import { Intro, Courses, News, Companies } from 'components/landing';
 import google from 'assets/company-logos/google.png'
@@ -9,48 +9,35 @@ export default ({ data }) => {
 
   console.log(data)
 
-  const contributions = [
-    { owner: "ethereum", name: "ethereum-org-website" },
-    { owner: "tensorflow", name: "docs" },
-  ]
-
   const companies = [
     { img: google, size: "100" },
     { img: ms, size: "240" },
   ]
 
-  const projects = [
+  const courses = [
     {
-      name: '2021年春季セミナー',
-      description: '2021/5/11-12の二日間Zoomで春季セミナーを行いました。',
-      to: "/",
+      name: 'Innovative Business Creator育成コース',
+      long: '最長4週間',
+      description: 'ビジネスアナリスト、デザイナー、コンサルタントに関する知識を身につけます。',
     },
     {
-      name: '2021年参加者メンバーに向けて',
-      description: '2021年参加者メンバーに向への連絡事項',
-      to: "/",
+      name: 'グローバル次世代ITプロフェッショナル育成コース',
+      long: '最長４週間',
+      description: 'プロジェクトマネージャー、エンジニアとして最新のシステム開発に関する知識を身につけます。',
     },
   ]
 
-  const courses = [
-    {
-      name: '短期セミナー',
-      long: '約10日間',
-      description: 'カリフォルニアにて短期間でGlobalなビジネスアナリシス人材を育成します。',
-      to: "/",
-    },
-    {
-      name: '長期セミナー',
-      long: '約２ヶ月間',
-      description: 'カリフォルニアで長期の育成セミナーをします。週末にはGoogleやAmazonなどの企業訪問もあります。',
-      to: "/",
-    },
-  ]
+  const long = {
+    name: '総合コース',
+    long: '最長８週間',
+    description: 'こちらのコースでは上記二つのコース両方の取得を目指します。',
+  }
+
   return (
     <Layout>
       <SEO />
       <Intro />
-      <Courses title={''} data={courses} />
+      <Courses title={''} data={courses} long={long} />
       <News title={'News'} data={data.allMarkdownRemark.edges} />
       <Companies logos={companies} />
     </Layout>);
@@ -78,4 +65,5 @@ export const query = graphql`
     }
   }
 `;
+
 
