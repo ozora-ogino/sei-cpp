@@ -1,11 +1,13 @@
 import React from 'react';
 import { Container } from 'components/common';
+import { Header } from 'components/theme';
 import { Link } from 'gatsby';
 import { Wrapper, Grid, Item, Content, Card, Top, Button } from './styles';
 
 export const News = (props) => {
   return (
     <Top>
+      <Header />
       <Wrapper as={Container} id="projects">
         <Grid len={props.length}>
           {

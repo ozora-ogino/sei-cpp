@@ -5,6 +5,7 @@ export const Top = styled.div`
 
 export const Wrapper = styled.div`
   padding-bottom: 4rem;
+  padding-top: 3rem;
 `;
 
 export const Title = styled.div`

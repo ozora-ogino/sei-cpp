@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { Layout, SEO } from 'components/common';
-import { Intro, News } from 'components/news';
+import { News } from 'components/news';
 
 export default ({ data }) => {
 
@@ -10,7 +10,6 @@ export default ({ data }) => {
   return (
     <Layout>
       <SEO />
-      <Intro />
       <News title={'News'} data={data.allMarkdownRemark.edges} />
     </Layout>);
 };
