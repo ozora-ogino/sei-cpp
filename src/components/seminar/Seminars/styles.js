@@ -18,13 +18,14 @@ export const Title = styled.div`
 `;
 
 export const Grid = styled.div`
+  margin-top: 3rem;
+  margin-bottom: 1rem;
   display: grid;
   text-align: center;
   align-items: center;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 8fr;
-  gap: 4.0rem 1.0rem;
-  margin-bottom: 1rem;
+  gap: 4.0rem 4.0rem;
 
   @media (max-width: 960px) {
     grid-template-columns: repeat(1, 1fr);
@@ -32,6 +33,7 @@ export const Grid = styled.div`
 
   @media (max-width: 680px) {
     grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
   }
 `;
 
@@ -59,6 +61,7 @@ export const Content = styled.div`
   padding: 1rem 0;
   min-height: 80px;
 `;
+
 
 export const Button = styled.button`
   cursor: pointer;

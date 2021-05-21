@@ -16,22 +16,22 @@ export const Intro = () => {
       <Header />
       <IntroWrapper as={Container}>
         <Details>
-            <Cover>
-              <div className='cov'>
-                <img src={la} width='1000rem'/>
-                {/* <img src={cpp} width='1000rem'/> */}
-                <h2>Make Your Business Faster</h2>
-              </div>
-            </Cover>
-            <Card>
-              <h3>我々は<span style={{color: '#2196f3', fontSize:'2rem'}}>Global</span>で<span style={{color: '#00acc1', fontSize:'2rem'}}>Creative</span>な人材の育成をサポートしています。</h3>
-              <ul className='top-banner'>
-                <li><img src={agile} /></li>
-                <li><img src={ba} /></li>
-              </ul>
-              <h3>カルフォルニアでBAやAgileを学んでみませんか？</h3>
-              <Link to={'/contact'}><Button>お問い合わせ</Button></Link>
-            </Card>
+          <Cover>
+            <div className='cov'>
+              <img src={la} width='1000rem' />
+              {/* <img src={cpp} width='1000rem'/> */}
+              <h2>Make Your Business Faster</h2>
+            </div>
+          </Cover>
+          <Card>
+            <h3>我々は<span style={{ color: '#2196f3', fontSize: '2rem' }}>Global</span>で<span style={{ color: '#00acc1', fontSize: '2rem' }}>Creative</span>な人材の育成をサポートしています。</h3>
+            <ul className='top-banner'>
+              <li><img src={agile} /></li>
+              <li><img src={ba} /></li>
+            </ul>
+            <h3>カルフォルニアでBAやAgileを学んでみませんか？</h3>
+            <Link to={'/contact'}><Button>お問い合わせ</Button></Link>
+          </Card>
         </Details>
       </IntroWrapper>
     </Wrapper>

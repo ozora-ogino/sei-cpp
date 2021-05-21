@@ -7,8 +7,6 @@ import ms from 'assets/company-logos/ms.jpg'
 
 export default ({ data }) => {
 
-  console.log(data)
-
   const companies = [
     { img: google, size: "100" },
     { img: ms, size: "240" },
