@@ -15,10 +15,10 @@ const NavbarLinks = ({ desktop }) => {
 
   return (
     <Wrapper desktop={desktop}>
-      <Link  to={"/"}  activeStyle={current} >Home</Link>
-      <Link  to={"/news"} activeStyle={current}  >News</Link>
-      <Link  to={"/seminar"} activeStyle={current}  >Seminar</Link>
-      <Link  to={"/contact"} activeStyle={current}  >Contact</Link>
+      <Link to={"/"} activeStyle={current} >Home</Link>
+      <Link to={"/seminars"} activeStyle={current}  >Seminar</Link>
+      <Link to={"/news"} activeStyle={current}  >News</Link>
+      <Link to={"/contact"} activeStyle={current}  >Contact</Link>
       {/* <AnchorLink href="#projects">Projects</AnchorLink>
       <AnchorLink href="#contact">Contact</AnchorLink> */}
     </Wrapper>
