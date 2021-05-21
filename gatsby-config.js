@@ -16,12 +16,20 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/contents/news`,
+        name: 'news'
+      }
+    },
+    {
       resolve: 'gatsby-plugin-nprogress',
       options: {
         color: config.themeColor,
         showSpinner: false,
       },
     },
+    'gatsby-transformer-remark',
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
