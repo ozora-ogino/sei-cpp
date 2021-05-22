@@ -36,7 +36,7 @@ export const Cover = styled.div`
 
 
 export const IntroWrapper = styled.div`
-  padding: 4rem 0;
+  padding-top: 4rem;
   align-items: center;
   justify-content: space-between;
 

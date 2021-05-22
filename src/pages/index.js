@@ -25,15 +25,27 @@ export default ({ data }) => {
   ]
 
   const courses = [
+    // {
+    //   name: 'Innovative Business Creator育成コース',
+    //   long: '最長4週間',
+    //   description: 'ビジネスアナリスト、デザイナー、コンサルタントに関する知識を身につけます。',
+    // },
+    // {
+    //   name: 'グローバル次世代ITプロフェッショナル育成コース',
+    //   long: '最長４週間',
+    //   description: 'プロジェクトマネージャー、エンジニアとして最新のシステム開発に関する知識を身につけます。',
+    // },
     {
-      name: 'Innovative Business Creator育成コース',
+      name: '長期コース',
       long: '最長4週間',
       description: 'ビジネスアナリスト、デザイナー、コンサルタントに関する知識を身につけます。',
+      to: '/seminars/long',
     },
     {
-      name: 'グローバル次世代ITプロフェッショナル育成コース',
-      long: '最長４週間',
-      description: 'プロジェクトマネージャー、エンジニアとして最新のシステム開発に関する知識を身につけます。',
+      name: '短期エグゼクティブコース',
+      long: '2週間',
+      description: '短期間で最新のビジネスの手法や知識、技術をみにつけることができます。',
+      to: 'seminars/short',
     },
   ]
 

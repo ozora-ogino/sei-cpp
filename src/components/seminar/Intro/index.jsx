@@ -26,7 +26,7 @@ const participants = [
   '自ら成長を求めている方',
 ]
 
-export const Seminars = (props) => {
+export const Intro = (props) => {
   return (
     <Top>
       <Header />

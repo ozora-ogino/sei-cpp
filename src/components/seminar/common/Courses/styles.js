@@ -17,18 +17,9 @@ export const Grid = styled.div`
   display: grid;
   align-items: center;
   text-align: center;
-  // grid-template-columns: ${({ len }) => `repeat(` + len + `, 1fr)`};
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1h 1fr);
   grid-template-rows: 8fr;
   gap: 4rem 1.2rem;
-
-  @media (max-width: 960px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (max-width: 680px) {
-    grid-template-columns: 1fr;
-  }
 `;
 
 export const Item = styled.div`
@@ -110,9 +101,4 @@ export const CourseCard = styled.div`
     color: #212121;
   }
 
-`;
-
-export const Long = styled.div`
-  text-align: center;
-  margin-top: 3rem;
 `;

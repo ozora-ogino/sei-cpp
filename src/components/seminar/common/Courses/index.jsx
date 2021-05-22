@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Container } from 'components/common';
-import { Wrapper, Grid, CourseCard, Item, Content, Title, Button, Long } from './styles';
+import { Wrapper, Grid, CourseCard, Item, Content, Title, Button } from './styles';
 
 export const Courses = (props) => {
   return (
@@ -15,6 +15,7 @@ export const Courses = (props) => {
                 <Content>
                   <h4>{d.name}</h4>
                   <p>期間 : {d.long}</p>
+                  <img src={d.img} width='400rem' />
                   <p>{d.description}</p>
                 </Content>
                 <Link to={d.to}><Button>コースの詳細はこちら</Button></Link>
@@ -23,15 +24,6 @@ export const Courses = (props) => {
           ))
         }
       </Grid>
-      {/* <Long>
-        <CourseCard>
-          <Content>
-            <h4>{props.long.name}</h4>
-            <p>期間 : {props.long.long}</p>
-            <p>{props.long.description}</p>
-          </Content>
-        </CourseCard>
-      </Long> */}
     </Wrapper>
   );
 }
