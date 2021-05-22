@@ -31,8 +31,8 @@ module.exports = {
             site {
               siteMetadata {
                 site_url: url
-                title: title
-                description: subtitle
+                title 
+                description: description 
               }
             }
           }
