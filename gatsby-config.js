@@ -8,6 +8,7 @@ module.exports = {
   siteMetadata: {
     title: config.defaultTitle,
     description: config.defaultDescription,
+    url: config.url,
     author: config.author,
   },
   plugins: [
