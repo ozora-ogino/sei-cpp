@@ -70,7 +70,7 @@ export const Button = styled.button`
   }
 
   &:hover{
-    padding: 0.43rem 2.8rem;
+    padding: 0.4rem 2.8rem;
     background: #0089ff;
     transition: 0.1s ease-in;
   }
