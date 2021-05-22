@@ -67,7 +67,7 @@ export const Button = styled.button`
   cursor: pointer;
   border-radius: 3px;
   padding: 0.4rem 2.5rem;
-  // margin-top: 2rem;
+  margin-bottom: 2rem;
   border: none;
   -webkit-appearance: none;
   -webkit-touch-callout: none;

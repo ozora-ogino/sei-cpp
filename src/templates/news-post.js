@@ -17,7 +17,7 @@ export default function BlogPost({ data }) {
       <Header />
       <Wrapper>
         <h1>{post.frontmatter.title}</h1>
-        <small>{post.frontmatter.date}</small>
+        <p style={{ marginBottom: '3rem' }}>{post.frontmatter.date}</p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </Wrapper>
     </Layout>

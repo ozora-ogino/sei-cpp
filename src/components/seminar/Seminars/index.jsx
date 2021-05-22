@@ -5,11 +5,12 @@ import { Container, CourseCard } from 'components/common';
 import { ListItems, Targets } from './ListsItems';
 import { Wrapper, Grid, Item, Content, Card, Top, Button } from './styles';
 import isshiki from 'assets/speakers-icon/isshiki-2.png'
+import seminarPDF from 'assets/pdf/cpp2021.pdf';
 
 const effects = [
   '国際的競争に勝つための提案型ビジネスアナリスト',
   '企画力、構想力、提案力、実現力の養成',
-  'グローバル・次世代高度人材 （グローバルCommunication skills BA）としてのスキル'
+  'グローバル・次世代高度人材、BAとしてのスキル'
 ]
 
 const features = [
@@ -49,6 +50,10 @@ export const Seminars = (props) => {
 
             </p>
           </div>
+        </Card>
+        <Card>
+          <img src={seminarPDF} width='300rem' />
+          <Link href={seminarPDF}><Button>資料はこちら</Button></Link>
         </Card>
         <Targets data={participants} title='本セミナーの対象者' color='##ec407a' />
         <Grid>

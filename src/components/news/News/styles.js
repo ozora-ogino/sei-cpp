@@ -57,6 +57,7 @@ export const Item = styled.div`
 
 export const Content = styled.div`
   padding: 1rem 0;
+  padding-bottom: 0;
   min-height: 80px;
 `;
 
@@ -92,7 +93,7 @@ export const Button = styled.button`
 
 
 export const Card = styled.div`
-  padding: 1rem;
+  padding-top: 1rem;
   background: #ffffff;
   height: 100%;
   border: solid 1px #cfd8dc;
@@ -100,15 +101,18 @@ export const Card = styled.div`
 
   h4 {
     color: #212121;
+    font-size: 1.2rem;
   }
 
   p {
     color: #212121;
+    margin-bottom: 0;
   }
   
   a {
     color: #212121;
   }
+
   @media (max-width: 680px) {
     border-radius: 0;
     border: none;
