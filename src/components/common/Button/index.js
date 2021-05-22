@@ -18,6 +18,11 @@ export const Button = styled.button`
   &:focus {
     outline: none;
   }
+  &:hover {
+    padding: 0.7rem 2.8rem;
+    background: #0089ff;
+    transition: 0.1s ease-in;
+  }
 
   &:disabled {
     background: gray;

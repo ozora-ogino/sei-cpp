@@ -43,8 +43,8 @@ module.exports = {
               ...edge.node.frontmatter,
               description: edge.node.frontmatter.description,
               date: edge.node.frontmatter.date,
-              url: site.siteMetadata.site_url + edge.node.fields.slug,
-              guid: site.siteMetadata.site_url + edge.node.fields.slug,
+              url: site.siteMetadata.site_url + edge.node.frontmatter.slug,
+              guid: site.siteMetadata.site_url + edge.node.frontmatter.slug,
               custom_elements: [{ 'content:encoded': edge.node.html }]
             }))
           ),

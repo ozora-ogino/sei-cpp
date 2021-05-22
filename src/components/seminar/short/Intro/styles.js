@@ -78,8 +78,14 @@ export const Button = styled.button`
   user-select: none;
   color: #fff;
   background: #007fed;
+
   &:focus {
     outline: none;
+  }
+
+  &:hover{
+    background: #0089ff;
+    transition: 0.1s ease-in;
   }
 
   &:disabled {
