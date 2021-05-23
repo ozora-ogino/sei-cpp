@@ -1,12 +1,16 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { Header } from 'components/theme';
-import { Layout, SEO } from 'components/common';
+import { Layout, SEO, Card } from 'components/common';
 import styled from 'styled-components';
 
 export const Wrapper = styled.div` 
   text-align: center;
+  align-contetns: center;
+  vertical-align: middle;
+  margin: auto;
   margin-top: 3rem;
+  max-width: 80%;
 `;
 export default function NewsPost({ data }) {
   const post = data.markdownRemark
@@ -16,9 +20,11 @@ export default function NewsPost({ data }) {
       <SEO />
       <Header />
       <Wrapper>
-        <h1>{post.frontmatter.title}</h1>
-        <p style={{ marginBottom: '3rem' }}>{post.frontmatter.date}</p>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <Card pad='4rem'>
+          <h1>{post.frontmatter.title}</h1>
+          <p style={{ marginBottom: '3rem' }}>{post.frontmatter.date}</p>
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        </Card>
       </Wrapper>
     </Layout>
   )

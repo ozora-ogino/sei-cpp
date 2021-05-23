@@ -107,11 +107,11 @@ export const DocWrapper = styled.div`
   align-items: center;
   padding: 0 2rem;
   padding-top: 2rem;
-  background: #ffffff;
+  // background: #ffffff;
   height: 100%;
-  border: solid 1px #cfd8dc;
-  border-radius: .3rem;
-  margin-bottom: 3rem;
+  // border: solid 1px #cfd8dc;
+  // border-radius: .3rem;
+  // margin-bottom: 3rem;
 
   h4 {
     color: #212121;

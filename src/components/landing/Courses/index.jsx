@@ -15,7 +15,9 @@ export const Courses = (props) => {
                 <Content>
                   <h4>{d.name}</h4>
                   <p>期間 : {d.long}</p>
-                  <p>{d.description}</p>
+                  <div style={{ height: 30 }}>
+                    <p>{d.description}</p>
+                  </div>
                 </Content>
                 <Link to={d.to}><Button>コースの詳細はこちら</Button></Link>
               </Card>
