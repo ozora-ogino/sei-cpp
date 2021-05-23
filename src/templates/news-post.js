@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
   text-align: center;
   margin-top: 3rem;
 `;
-export default function BlogPost({ data }) {
+export default function NewsPost({ data }) {
   const post = data.markdownRemark
 
   return (
