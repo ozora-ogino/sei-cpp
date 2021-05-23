@@ -46,7 +46,7 @@ export const Details = styled.div`
 
   h2 {
     margin-bottom: 2rem;
-    font-size: 20pt;
+    font-size: 24pt;
     color: #373737;
 
     @media (max-width: 960px) {
@@ -54,7 +54,7 @@ export const Details = styled.div`
     }
 
     @media (max-width: 680px) {
-      font-size: 16pt;
+      font-size: 20pt;
     }
   }
 

@@ -13,7 +13,10 @@ export const Title = styled.div`
   padding: 1.8rem;
   h2 {
     color: #37474f;
-    font-size: 22pt,
+    font-size: 24pt;
+    media (max-width: 680px) {
+    font-size: 20pt;
+  }
   }
 `;
 
