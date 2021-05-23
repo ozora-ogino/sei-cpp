@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Header } from 'components/theme';
-import { Container, CourseCard } from 'components/common';
+import { Container, Card } from 'components/common';
 import { ListItems, Targets } from './ListsItems';
-import { Wrapper, Grid, Item, Content, Card, Top, Button } from './styles';
+import { Wrapper, Grid, DocWrapper, Top, Button } from './styles';
 import isshiki from 'assets/speakers-icon/isshiki-2.png'
 import seminarPDF from 'assets/pdf/cpp2021-short.pdf';
 
@@ -34,7 +34,7 @@ export const Intro = (props) => {
       <Header />
       <Wrapper as={Container}>
         <h1 style={{ marginBottom: '3rem' }}>短期エグゼクティブセミナー</h1>
-        <Card>
+        <DocWrapper >
           <img src={isshiki} />
           <div>
             <p>初めまして。Cal Poly（カリフォルニア州立工科大学）Pomona校にて教授を務めております一色浩一郎です。
@@ -51,11 +51,11 @@ export const Intro = (props) => {
               これだけの企業と一気に交流できるのはまたとない機会かと思いますので、このチャンスをご活用ください
             </p>
           </div>
-        </Card>
-        <Card>
+        </DocWrapper>
+        <DocWrapper>
           <img src={seminarPDF} width='300rem' />
           <Link href={seminarPDF}><Button>資料はこちら</Button></Link>
-        </Card>
+        </DocWrapper>
         <Targets data={participants} title='本セミナーの対象者' color='##ec407a' />
         <Grid>
           <ListItems data={features} title='セミナーの特徴' />

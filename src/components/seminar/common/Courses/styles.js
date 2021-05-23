@@ -85,27 +85,3 @@ export const Button = styled.button`
 		background: #001F3F;
 	`}
 `;
-
-export const CourseCard = styled.div`
-  padding: 0 1rem;
-  padding-top: 1rem;
-  background: #ffffff;
-  height: 100%;
-  border: solid 1px #cfd8dc;
-  border-radius: .3rem;
-
-  h4 {
-    color: #212121;
-  }
-
-  p {
-    color: #212121;
-    margin-bottom: 0;
-    margin-top: 1rem;
-  }
-  
-  a {
-    color: #212121;
-  }
-
-`;

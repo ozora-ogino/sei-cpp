@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Header } from 'components/theme';
-import { Container, CourseCard } from 'components/common';
+import { Container, Card } from 'components/common';
 import { ListItems, Targets } from './ListsItems';
-import { Wrapper, Grid, Item, Content, Card, Top, Button } from './styles';
+import { Wrapper, Grid, Top, Button, DocWrapper } from './styles';
 import isshiki from 'assets/speakers-icon/isshiki-2.png'
 import seminarPDF from 'assets/pdf/cpp2021.pdf';
 
@@ -32,29 +32,31 @@ export const Intro = (props) => {
       <Header />
       <Wrapper as={Container}>
         <h1 style={{ marginBottom: '3rem' }}>長期セミナー</h1>
-        <Card>
-          <img src={isshiki} />
-          <div>
-            <p>初めまして。Cal Poly（カリフォルニア州立工科大学）Pomona校にて教授を務めております一色浩一郎です。
+        <div style={{ marginBottom: '3rem' }}>
+          <DocWrapper>
+            <img src={isshiki} />
+            <div>
+              <p>初めまして。Cal Poly（カリフォルニア州立工科大学）Pomona校にて教授を務めております一色浩一郎です。
             </p>
-            <p>
-              本セミナーはロサンゼルスにあるCal Poly Pomona校を拠点として行います。
-              Cal PolyはUberをはじめ多くの事業を育んできました。
+              <p>
+                本セミナーはロサンゼルスにあるCal Poly Pomona校を拠点として行います。
+                Cal PolyはUberをはじめ多くの事業を育んできました。
               セミナーでは大学からだけではなく企業からも講演者をお招きして今起きている<span style={{ fontWeight: 'bold' }}>Disruption（破壊的創造）</span>、
               今後予想されるDisruptionを支える最新技術をお伝え致します。
             </p>
-            <p>
-              そして、現在のIT業界を引っ張る会社のクリエイティブ・リーダー達と膝詰めで意見交換をし、各社を訪問しながら議論する機会を設けました。
-              各社に訪問し、クリエイティブ・リーダー達と議論することで、必ずや、皆様の会社の未来への道筋が見えてくることと存じます。
-              これだけの企業と一気に交流できるのはまたとない機会かと思いますので、このチャンスをご活用ください
+              <p>
+                そして、現在のIT業界を引っ張る会社のクリエイティブ・リーダー達と膝詰めで意見交換をし、各社を訪問しながら議論する機会を設けました。
+                各社に訪問し、クリエイティブ・リーダー達と議論することで、必ずや、皆様の会社の未来への道筋が見えてくることと存じます。
+                これだけの企業と一気に交流できるのはまたとない機会かと思いますので、このチャンスをご活用ください
 
             </p>
-          </div>
-        </Card>
-        <Card>
+            </div>
+          </DocWrapper>
+        </div>
+        <DocWrapper>
           <img src={seminarPDF} width='200rem' />
           <Link href={seminarPDF}><Button>資料はこちら</Button></Link>
-        </Card>
+        </DocWrapper>
         <Targets data={participants} title='本セミナーの対象者' color='##ec407a' />
         <Grid>
           <ListItems data={features} title='セミナーの特徴' />

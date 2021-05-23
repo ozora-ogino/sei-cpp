@@ -100,7 +100,8 @@ export const Button = styled.button`
 `;
 
 
-export const Card = styled.div`
+
+export const DocWrapper = styled.div`
   display:flex;
   justify-content:center; 
   align-items: center;
@@ -131,6 +132,4 @@ export const Card = styled.div`
     border-radius: 0;
     border: none;
   }
-`;
-
-
+`

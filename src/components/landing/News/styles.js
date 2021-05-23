@@ -42,10 +42,10 @@ export const Item = styled.div`
   // overflow: hidden;
   // box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.11);
 
-  @media (max-width: 680px) {
-    overflow: hidden;
-    box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.11);
-  }
+  // @media (max-width: 680px) {
+  //   overflow: hidden;
+  //   box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.11);
+  // }
 
   h4 {
     color: #424242;

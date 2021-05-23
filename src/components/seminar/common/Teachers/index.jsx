@@ -1,7 +1,6 @@
 import React from 'react';
-import { Container } from 'components/common';
-import { Link } from 'gatsby';
-import { Wrapper, Grid, Content, Texts, Title, Card, Top } from './styles';
+import { Container, Card } from 'components/common';
+import { Wrapper, Grid, Content, Texts, Title, Top } from './styles';
 
 export const Teachers = (props) => {
   return (
@@ -11,7 +10,7 @@ export const Teachers = (props) => {
         <Grid len={props.data.length}>
           {
             props.data.map((d) => (
-              <Card>
+              <Card pad='1rem 0 0 0'>
                 <Content>
                   <img src={d.img} />
                   <Texts>

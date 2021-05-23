@@ -45,27 +45,6 @@ export const IntroWrapper = styled.div`
   }
 `;
 
-export const Card = styled.div`
-  padding: 1rem;
-  background: #ffffff;
-  height: 100%;
-  border: solid 1px #cfd8dc;
-  border-radius: .3rem;
-
-  h3 {
-    color: #37474f;
-    padding-top: 1rem;
-  }
-
-  p {
-    color: #212121;
-  }
-  
-  a {
-    color: #212121;
-  }
-`;
-
 export const Details = styled.div`
   flex: 1;
 

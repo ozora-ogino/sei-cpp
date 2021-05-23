@@ -604,7 +604,11 @@ export const Global = createGlobalStyle`
       padding: 0;
       font-family: 'Roboto', Helvetica, sans-serif;
       color: #0c0c0c;
-      background-color: #fafafa;
+      background-color: #fafafa; // White
+      // background: rgb(19,21,210);
+      // background: linear-gradient(90deg, rgba(19,21,210,1) 0%, rgba(0,196,255,1) 100%);
+      // background: rgb(26,92,180);
+      // background: linear-gradient(0deg, rgba(26,92,180,1) 0%, rgba(45,198,253,1) 100%);
       transition: .3s all;
       font-weight: normal;
       word-wrap: break-word;

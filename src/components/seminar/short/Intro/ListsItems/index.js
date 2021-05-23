@@ -1,16 +1,9 @@
 import React from 'react';
+import { Card } from 'components/common';
 import styled from 'styled-components';
 
 
 const Wrapper = styled.div`
-    background: #ffffff;
-    border: solid 1px #cfd8dc;
-    border-radius: .3rem;
-    max-width: 800px;
-    height: 100%;
-    width: 100%;
-    margin: auto;
-    padding: 1rem;
     h3 {
         margin-top: 1rem;
         padding-bottom: .5rem;
@@ -20,31 +13,26 @@ const Wrapper = styled.div`
         list-style: none;
         margin-bottom: 0;
     }
-    padding-bottom: 0;
 `;
 
 export const ListItems = (props) => {
 
     return (
-        <Wrapper>
-            <h3>{props.title}</h3>
-            <ul>
-                {props.data.map(item => {
-                    return <li>{item}</li>
-                })}
-            </ul>
-        </Wrapper>
+        <Card pad='1rem 0 0 0'>
+            <Wrapper>
+                <h3>{props.title}</h3>
+                <ul>
+                    {props.data.map(item => {
+                        return <li>{item}</li>
+                    })}
+                </ul>
+            </Wrapper>
+        </Card>
     )
 }
 
 const TargetWrapper = styled.div`
-    background: #ffffff;
-    // border: solid 3px #00acc1;
-    border: solid 1px #cfd8dc;
-    border-radius: .3rem;
-    // max-width: 800px;
     margin: auto;
-    padding: 1rem;
     h3 {
         margin-top: 1rem;
         padding-bottom: .5rem;
@@ -61,13 +49,15 @@ const TargetWrapper = styled.div`
 export const Targets = (props) => {
 
     return (
-        <TargetWrapper>
-            <h3>{props.title}</h3>
-            <ul>
-                {props.data.map(item => {
-                    return <li>{item}</li>
-                })}
-            </ul>
-        </TargetWrapper>
+        <Card pad='1rem'>
+            <TargetWrapper>
+                <h3>{props.title}</h3>
+                <ul>
+                    {props.data.map(item => {
+                        return <li>{item}</li>
+                    })}
+                </ul>
+            </TargetWrapper>
+        </Card>
     )
 }

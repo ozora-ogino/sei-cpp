@@ -1,7 +1,6 @@
 import React from 'react';
-import { Container } from 'components/common';
-import { Link } from 'gatsby';
-import { Wrapper, Grid, Title, Content, Texts, Card, Top } from './styles';
+import { Container, Card } from 'components/common';
+import { Wrapper, Grid, Title, Content, Texts, Top } from './styles';
 
 export const Speakers = (props) => {
   return (
@@ -11,7 +10,7 @@ export const Speakers = (props) => {
         <Grid len={props.data.length}>
           {
             props.data.map((d) => (
-              <Card>
+              <Card pad='1rem 0 0 0'>
                 <Content>
                   <img src={d.img} />
                   <Texts>

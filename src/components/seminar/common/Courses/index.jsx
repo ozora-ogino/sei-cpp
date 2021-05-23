@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { Container } from 'components/common';
-import { Wrapper, Grid, CourseCard, Item, Content, Title, Button } from './styles';
+import { Container, Card } from 'components/common';
+import { Wrapper, Grid, Item, Content, Title, Button } from './styles';
 
 export const Courses = (props) => {
   return (
@@ -11,7 +11,7 @@ export const Courses = (props) => {
         {
           props.data.map((d) => (
             <Item as="a" href={d.url} target="_blank" rel="noopener noreferrer">
-              <CourseCard>
+              <Card pad='1rem 0 0 0 '>
                 <Content>
                   <h4>{d.name}</h4>
                   <p>期間 : {d.long}</p>
@@ -19,7 +19,7 @@ export const Courses = (props) => {
                   <p>{d.description}</p>
                 </Content>
                 <Link to={d.to}><Button>コースの詳細はこちら</Button></Link>
-              </CourseCard>
+              </Card>
             </Item>
           ))
         }

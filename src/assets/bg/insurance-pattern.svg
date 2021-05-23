@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1895.6 1230" style="enable-background:new 0 0 1895.6 1230;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#Trazado_217_1_);}
+	.st1{opacity:0.742;fill:url(#Trazado_218_1_);enable-background:new    ;}
+	.st2{opacity:0.858;fill:url(#Trazado_219_1_);enable-background:new    ;}
+</style>
+<g id="Flow" transform="matrix(0.995, 0.105, -0.105, 0.995, 43.292, -16.618)">
+	
+		<linearGradient id="Trazado_217_1_" gradientUnits="userSpaceOnUse" x1="1080.4805" y1="675.7651" x2="1081.1675" y2="677.2161" gradientTransform="matrix(1818.4586 639.2075 -3.2948 -558.7814 -1962402.25 -312359.1875)">
+		<stop  offset="0" style="stop-color:#E33E0A"/>
+		<stop  offset="0.314" style="stop-color:#FFA041"/>
+		<stop  offset="0.492" style="stop-color:#EF860F"/>
+		<stop  offset="0.554" style="stop-color:#F4A811"/>
+		<stop  offset="1" style="stop-color:#FDE315"/>
+	</linearGradient>
+	<path id="Trazado_217" class="st0" d="M105.5,319c36.3,23,128.4,70.5,267.4,84.7s314.5-28.5,362.2-19.4
+		c47.7,9.1,136.6,7.7,217.8,56.1s173.8,94.7,213.8,109.6c40,14.9,168.3-27.5,261.9,19.3c93.6,46.7,123.1,108.2,177.7,149.5
+		c54.6,41.2,102.7,121.4,190.9,121.2c88.2-0.2,107.9-6.5,107.9-6.5s-71.5,54.4-151,24.7s-203.5-159.5-241.3-202.8
+		c-37.8-43.3-123.2-125.1-272.8-77.2s-229.7,83.6-311.4,9.4s-105.4-70-227.1-66.1s-202.3,16-259.7,44
+		C384.4,593.3,215.4,712.1,83,599.5s-38.6-322-38.6-322S69.1,296,105.5,319z"/>
+	
+		<linearGradient id="Trazado_218_1_" gradientUnits="userSpaceOnUse" x1="1080.9515" y1="677.0346" x2="1081.0165" y2="675.8426" gradientTransform="matrix(1821.5688 649.3393 -32.2755 -485.2082 -1946270 -373203.8438)">
+		<stop  offset="0" style="stop-color:#FF4477"/>
+		<stop  offset="1" style="stop-color:#FF7701"/>
+	</linearGradient>
+	<path id="Trazado_218" class="st1" d="M55.5,361.1c38.6,58.1,310.3,258.7,491.8,208.6s115.1-209.8,189.6-177.5
+		S881,511.7,890.5,569.7c9.5,58,79.6,39.4,215,14.1c135.5-25.3,288.4-43.7,368.1,28.7c79.7,72.4,150.3,176.7,228.2,166.7
+		c77.9-10,83.4-21.7,83.4-21.7s-76.6,30.4-131.9-18.3c-55.2-48.7-107.7-134.8-166.7-179.1c-59-44.2-70.2-49-199.8-43.8
+		c-129.6,5.2-358.3-26-403.2-50.7c-44.9-24.6-122.3-84.9-157-135.5c-34.7-50.6-70.9-150.9-179.3-175.7s-218.6,25.3-282.8,50
+		S126.7,137.8,78.1,64.5S-16.4,5.3-30.6,70.3S16.9,303,55.5,361.1z"/>
+	
+		<linearGradient id="Trazado_219_1_" gradientUnits="userSpaceOnUse" x1="1080.6553" y1="675.9773" x2="1080.7032" y2="677.0623" gradientTransform="matrix(1442.569 510.437 -13.3809 -415.5818 -1548682 -269901.3438)">
+		<stop  offset="0" style="stop-color:#FF4477"/>
+		<stop  offset="1" style="stop-color:#FF6E41"/>
+	</linearGradient>
+	<path id="Trazado_219" class="st2" d="M595.9,269.3c0,0,155.5-5.3,225.1,19.3s134.6,118.7,214.6,173.5s183.8,138.4,237.9,146.4
+		c54.1,7.9,188,16.1,271.6-12s197.9-16.4,251.1,51.6c53.2,68,96.8,148.2,125.5,201.5c28.7,53.3,66.6,137.6,21.4,184.1
+		c-68.2,70.3-78.3-94.7-168.3-124.8s-242.9,99.9-215.3,6.9s8.3-153.2-14.5-190.5c-22.8-37.3-52.6-83.6-181-62.4
+		c-128.4,21.2-185.9-9.1-220.4-26.7s-83.3-53-122.1-104.1s-87.5-108.7-107.5-121.4c-20-12.7-114.1-65.6-171.5-94.7
+		C685.2,287.2,595.9,269.3,595.9,269.3z"/>
+</g>
+</svg>
