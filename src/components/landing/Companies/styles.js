@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   border-top: 0.1px solid #dddddd;
-  border-bottom: 0.1px solid #dddddd;
+  // border-bottom: 0.1px solid #dddddd;
   background-size: contain;
   background-position: right top;
   background-repeat: no-repeat;
