@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 import Hamburger from './Hamburger';
 import Sidebar from './Sidebar';
 import { Wrapper, Overlay } from './styles';
-import HeaderLogo from 'assets/icons/header-logo.svg';
+import HeaderLogo from 'assets/icons/cpp-logo.png';
 
 export const Header = () => {
   const [sidebar, toggle] = useState(false);
