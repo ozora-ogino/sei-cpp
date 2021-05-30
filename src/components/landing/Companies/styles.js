@@ -93,8 +93,9 @@ export const LogoList = styled.div`
 `;
 
 export const Logo = styled.div`
+  width: 12%;
   padding: 1rem;
-  display: inline-block; 
+  display: inline-block;
   margin: auto;
   vertical-align: middle;
 `;
