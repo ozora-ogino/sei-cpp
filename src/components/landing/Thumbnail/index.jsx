@@ -34,7 +34,11 @@ img {
         font-size: 14px;
         }
     @media (max-width: 680px) {
-      font-size: 10px;
+      font-size: 8px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 8px;
     }
   }
 
@@ -48,7 +52,7 @@ img {
         }
       @media (max-width: 680px) {
         margin-bottom: .5rem;
-        font-size: 12px;
+        font-size: 10px;
         }
       }
 
@@ -57,6 +61,9 @@ img {
     }
     @media (max-width: 680px) {
       margin: 2rem 0 1rem 2rem;
+    }
+    @media (max-width: 480px) {
+      margin: 1rem 0 .5rem 2rem;
     }
 }
 `;
