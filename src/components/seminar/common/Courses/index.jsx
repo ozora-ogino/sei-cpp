@@ -11,7 +11,7 @@ export const Courses = (props) => {
         {
           props.data.map((d) => (
             <Item as="a" href={d.url} target="_blank" rel="noopener noreferrer">
-              <Card pad='1rem 0 0 0 '>
+              <Card pad='1rem 1rem 0 1rem '>
                 <Content>
                   <h4>{d.name}</h4>
                   <p>期間 : {d.long}</p>

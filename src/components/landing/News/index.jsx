@@ -12,7 +12,7 @@ export const News = (props) => {
           {
             props.data.map((d) => (
               <Item as="a" href={d.url} target="_blank" rel="noopener noreferrer">
-                <Card pad='1rem 0 0 0'>
+                <Card pad='1rem 1rem 0 1rem'>
                   <Content>
                     <h4>{d.node.frontmatter.title}</h4>
                     <p>{d.node.frontmatter.description}</p>
