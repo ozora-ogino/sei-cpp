@@ -8,29 +8,42 @@ export const Wrapper = styled.div`
 `;
 
 export const Cover = styled.div`
-  padding-bottom: 1rem;
+img {
+  margin-bottom: 0;
+}
+
   .cov{
     position: relative;
-  // h2 {
-  //   position: absolute:
-  //   left: 5rem;
-  //   top: 6rem;
-  // }
   }
-  .cov h2 {
-  position: absolute;
-    width: 100%;
-    left: 0; 
-    top: calc(50% - 25px); 
-    text-align: center; 
-    font-weight: bold; 
-    font-size: 50px;
-  @media (max-width: 960px) {
-    font-size: 30px;
+
+  .top-letter {
+    height: 70%;
+    position: absolute;
+    left: 0;
+    top: calc(20% - 25px);
+    text-align: center;
+    font-weight: bold;
+    color: white;
   }
-  @media (max-width: 680px) {
-    font-size: 18px;
+
+  .top-letter button {
+    margin: auto;
+    @media (max-width: 680px) {
+      font-size: 12px;
+    }
   }
+
+  .top-letter h2 {
+    margin: 4rem 2rem;
+    margin-top: 5rem;
+    @media (max-width: 960px) {
+      margin: 3rem 2rem;
+      font-size: 20px;
+    }
+    @media (max-width: 680px) {
+      font-size: 14px;
+      margin: 2rem 2rem;
+    }
 }
 `;
 
