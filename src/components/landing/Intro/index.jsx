@@ -12,8 +12,6 @@ export const Intro = () => {
 
   return (
     <Wrapper >
-      <Header />
-      <Thumbnail />
       <IntroWrapper as={Container}>
         <Details>
           <Card pad='3rem 0 0 0'>

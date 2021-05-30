@@ -1,7 +1,11 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import Fade from 'react-reveal/Fade';
+
 import { Layout, SEO } from 'components/common';
-import { Intro, Courses, News, Companies } from 'components/landing';
+import { Intro, Courses, News, Companies, Thumbnail } from 'components/landing';
+import { Header } from 'components/theme';
+
 import google from 'assets/company-logos/google.png'
 import ms from 'assets/company-logos/ms.jpg'
 import uber from 'assets/company-logos/uber.png'
@@ -58,25 +62,36 @@ export default ({ data }) => {
   return (
     <Layout>
       <SEO />
-      <Intro />
-      <Courses title={''} data={courses} long={long} />
-      <News title={'更新情報'} data={data.allMarkdownRemark.edges} />
-      <Companies logos={companies} />
-    </Layout>);
+      <Header />
+      <Thumbnail />
+      <Fade right big>
+        <Intro />
+      </Fade>
+      <Fade left big>
+        <Courses title={''} data={courses} long={long} />
+      </Fade>
+      <Fade right big>
+        <News title={'更新情報'} data={data.allMarkdownRemark.edges} />
+      </Fade>
+      <Fade left>
+        <Companies logos={companies} />
+      </Fade>
+    </Layout>
+  );
 };
 
 
 export const query = graphql`
   query IndexQuery{
-    allMarkdownRemark(
-        limit: 2,
-        filter: { frontmatter: { template: { eq: "news" }, draft: { ne: true } } },
-        sort: { order: DESC, fields: [frontmatter___date] }
+          allMarkdownRemark(
+            limit: 2,
+        filter: {frontmatter: {template: {eq: "news" }, draft: {ne: true } } },
+        sort: {order: DESC, fields: [frontmatter___date] }
       ){
-      edges {
-        node {
+          edges {
+          node {
           frontmatter {
-            slug
+          slug
             title
             date
             category

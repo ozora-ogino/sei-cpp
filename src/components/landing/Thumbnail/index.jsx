@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import Fade from 'react-reveal/Fade';
 import { Button } from 'components/common';
 import styled from 'styled-components';
 import top from 'assets/illustrations/topcover.png'
@@ -67,13 +68,15 @@ export const Thumbnail = () => {
     <Cover>
       <div className='cov'>
         <img src={top} />
-        <div className='top-letter'>
-          <div className='letter-h2'>
-            <h2>現役プロフェッショナルが教える</h2>
-            <h2>シリコンパレー式ビジネス革新</h2>
+        <Fade left >
+          <div className='top-letter'>
+            <div className='letter-h2'>
+              <h2>現役プロフェッショナルが教える</h2>
+              <h2>シリコンパレー式ビジネス革新</h2>
+            </div>
+            <Link to={'/contact'}><Button>お問い合わせ</Button></Link>
           </div>
-          <Link to={'/contact'}><Button>お問い合わせ</Button></Link>
-        </div>
+        </Fade>
       </div>
     </Cover>
   );
