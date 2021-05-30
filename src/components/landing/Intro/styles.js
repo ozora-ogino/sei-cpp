@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Cover = styled.div`
+vertical-align: middle;
 img {
   margin-bottom: 0;
 }
@@ -18,31 +19,45 @@ img {
 
   .top-letter {
     height: 70%;
+    width: 50%;
     position: absolute;
     left: 0;
     top: calc(20% - 25px);
-    text-align: center;
+    // text-align: center;
     font-weight: bold;
+    text-align: left;
     color: white;
   }
 
   .top-letter button {
-    margin: auto;
+    margin-top: 0;
+      @media (max-width: 960px) {
+        font-size: 14px;
+        }
     @media (max-width: 680px) {
-      font-size: 12px;
+      font-size: 10px;
     }
   }
 
-  .top-letter h2 {
-    margin: 4rem 2rem;
-    margin-top: 5rem;
+  .letter-h2 {
+    margin: 4rem 0 2rem 2rem;
+    h2 {
+      text-align: left;
+      font-size: 20pt;
+      @media (max-width: 960px) {
+        font-size: 14pt;
+        }
+      @media (max-width: 680px) {
+        margin-bottom: .5rem;
+        font-size: 12px;
+        }
+      }
+
     @media (max-width: 960px) {
-      margin: 3rem 2rem;
-      font-size: 20px;
+      margin: 2rem 0 0rem 2rem;
     }
     @media (max-width: 680px) {
-      font-size: 14px;
-      margin: 2rem 2rem;
+      margin: 2rem 0 1rem 2rem;
     }
 }
 `;

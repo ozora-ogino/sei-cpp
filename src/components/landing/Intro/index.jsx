@@ -5,10 +5,7 @@ import { Container, Button, Card } from 'components/common';
 import { Wrapper, IntroWrapper, Details, Cover } from './styles';
 import agile from 'assets/illustrations/agile.png'
 import ba from 'assets/illustrations/ba.png'
-import la from 'assets/illustrations/la.jpg'
 import top from 'assets/illustrations/topcover.png'
-import cp from 'assets/bg/connection-pattern.svg'
-import ap from 'assets/bg/advantages-bottom-pattern.svg'
 
 
 export const Intro = () => {
@@ -20,7 +17,10 @@ export const Intro = () => {
         <div className='cov'>
           <img src={top} />
           <div className='top-letter'>
-            <h2>仲間と共にビジネス革新を学美ませんか？</h2>
+            <div className='letter-h2'>
+              <h2>現役プロフェッショナルが教える</h2>
+              <h2>シリコンパレー式ビジネス革新</h2>
+            </div>
             <Link to={'/contact'}><Button>お問い合わせ</Button></Link>
           </div>
         </div>
