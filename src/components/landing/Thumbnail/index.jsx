@@ -25,6 +25,9 @@ img {
     // text-align: center;
     font-weight: bold;
     text-align: left;
+    @media (max-width: 580px) {
+      display: none;
+    }
     color: white;
   }
 
