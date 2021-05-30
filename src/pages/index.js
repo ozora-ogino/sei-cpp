@@ -60,7 +60,7 @@ export default ({ data }) => {
       <SEO />
       <Intro />
       <Courses title={''} data={courses} long={long} />
-      <News title={'News'} data={data.allMarkdownRemark.edges} />
+      <News title={'更新情報'} data={data.allMarkdownRemark.edges} />
       <Companies logos={companies} />
     </Layout>);
 };
@@ -87,5 +87,3 @@ export const query = graphql`
     }
   }
 `;
-
-
