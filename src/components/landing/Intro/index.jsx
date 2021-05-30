@@ -21,7 +21,7 @@ export const Intro = () => {
           <img src={top} />
           <div className='top-letter'>
             <h2>仲間と共にビジネス革新を学美ませんか？</h2>
-            <Button>お問い合わせ</Button>
+            <Link to={'/contact'}><Button>お問い合わせ</Button></Link>
           </div>
         </div>
       </Cover>
