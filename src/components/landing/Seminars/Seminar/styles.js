@@ -13,6 +13,7 @@ export const Content = styled.div`
   img {
     width: 100%;
     // border-radius: .6rem  .6rem 0 0;
+    transition-duration: 0.5s;
   }
 
   img:hover{
