@@ -78,7 +78,7 @@ export const Thumbnail = () => {
     <Cover>
       <div className='cov'>
         <img src={top} />
-        <Fade left >
+        <Fade bottom >
           <div className='top-letter'>
             <div className='letter-h2'>
               <h2>現役プロフェッショナルが教える</h2>

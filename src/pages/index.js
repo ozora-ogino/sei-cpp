@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import Fade from 'react-reveal/Fade';
 
 import { Layout, SEO } from 'components/common';
-import { Intro, Courses, News, Companies, Thumbnail } from 'components/landing';
+import { Intro, Merit, News, Companies, Thumbnail, Seminars } from 'components/landing';
 import { Header } from 'components/theme';
 
 import google from 'assets/company-logos/google.png'
@@ -14,6 +14,11 @@ import disney from 'assets/company-logos/disney.png'
 import drivemode from 'assets/company-logos/drivemode.png'
 import esri from 'assets/company-logos/esri.png'
 import auriq from 'assets/company-logos/auriq.png'
+import longimg from 'assets/illustrations/long-seminar.png'
+import shortimg from 'assets/illustrations/short-seminar.png'
+import onlineimg from 'assets/illustrations/online.jpeg'
+
+// TODO: Remove Courses directory
 
 export default ({ data }) => {
 
@@ -27,6 +32,30 @@ export default ({ data }) => {
     { img: esri, size: "200" },
     { img: auriq, size: "200" },
   ]
+  const online =
+  {
+    name: 'オンラインセミナー（参加無料）',
+    long: '1年に2〜３回程度',
+    img: onlineimg,
+    description: 'ビジネスアナリスト、デザイナー、コンサルタントに関する知識を身につけます。',
+    to: '/seminars/long',
+  }
+  const long =
+  {
+    name: '長期コース',
+    long: '期間 : 最長4週間',
+    img: longimg,
+    description: 'ビジネスアナリスト、デザイナー、コンサルタントに関する知識を身につけます。',
+    to: '/seminars/long',
+  }
+  const short =
+  {
+    name: '短期エグゼクティブコース',
+    long: '期間 : 2週間',
+    img: shortimg,
+    description: '短期間で最新のビジネスの手法や知識、技術をみにつけることができます。',
+    to: 'seminars/short',
+  }
 
   const courses = [
     // {
@@ -53,30 +82,29 @@ export default ({ data }) => {
     },
   ]
 
-  const long = {
-    name: '総合コース',
-    long: '最長８週間',
-    description: 'こちらのコースでは上記二つのコース両方の取得を目指します。',
-  }
+  // const long = {
+  //   name: '総合コース',
+  //   long: '最長８週間',
+  //   description: 'こちらのコースでは上記二つのコース両方の取得を目指します。',
+  // }
 
   return (
     <Layout>
       <SEO />
       <Header />
       <Thumbnail />
-      <Fade right big>
+      <Fade bottom >
         <Intro />
+        <Merit />
       </Fade>
-      <Fade left big>
-        <Courses title={''} data={courses} long={long} />
-      </Fade>
+      <Seminars long={long} short={short} online={online} />
       <Fade right big>
         <News title={'更新情報'} data={data.allMarkdownRemark.edges} />
       </Fade>
       <Fade left>
         <Companies logos={companies} />
       </Fade>
-    </Layout>
+    </Layout >
   );
 };
 

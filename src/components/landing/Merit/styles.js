@@ -1,36 +1,58 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  text-align: center;
+  // width: 800px;
   height: 100%;
   display: table;
-  text-align: center;
   margin: auto;
   @media (max-width: 960px) {
-  margin: .4rem;
+    margin: .4rem;
   }
+`;
+
+
+export const Title = styled.div`
+padding-bottom: .3rem;
+background: /* gradient can be an image */
+  linear-gradient(
+    to left,
+    #2196f3, #e91e63
+  )
+  left
+  bottom
+  no-repeat;
+background-size:100% 2px
 `;
 
 export const IntroWrapper = styled.div`
-  width: 100%;
-  // padding-top: 6rem;
-  display: table-cell;
-  padding-right: 0;
-  margin-right: 0;
-  align-items: center;
-  vertical-align: middle;
-
+display: table-cell;
+vertical-align: middle;
+align-items: center;
   @media (max-width: 960px) {
-    flex-direction: column;
   }
 `;
 
+export const Card = styled.div`
+  background: #ffffff;
+  height: 100%;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(to left, #2196f3, #e91e63);
+  -webkit-box-shadow: 0px 3px 17px -2px rgba(0,0,0,0.13);
+  border-radius: .3rem;
+  padding: 2rem;
+`;
+
 export const Details = styled.div`
-padding-top: 4rem;
   // flex: 1;
 
   @media (max-width: 960px) {
     width: 100%;
-    margin-bottom: 2rem;
+    // margin-bottom: 2rem;
   }
 
   h1 {
@@ -50,10 +72,9 @@ padding-top: 4rem;
   }
 
   h2 {
-    font-size: 30pt;
+    font-size: 24pt;
     text-align: center;
-    color: white;
-    margin: 1rem;
+    // margin: 1rem;
     // background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
     // -webkit-background-clip: text;
     // -webkit-text-fill-color: transparent;
@@ -84,10 +105,10 @@ padding-top: 4rem;
 
   p {
     margin: 1rem;
-    color:  black ;
     font-size: 14pt;
     font-weight: normal;
-    color:#7c7c7c ;
+    color:  black ;
+    // color:#7c7c7c ;
 
     @media (max-width: 960px) {
       mix-blend-mode: unset;
@@ -96,23 +117,5 @@ padding-top: 4rem;
     @media (max-width: 680px) {
       font-size: 12pt;
     }
-  }
-
-  .top-banner{
-    margin: auto;
-    width: 60%;
-    display: flex;
-    list-style: none;
-    flex-wrap:wrap;
-  }
-  .top-banner li {
-    width: calc(100%/2);
-    vertical-align: middle;
-    box-sizing:border-box;
-    margin: auto;
-  }
-  .top-banner li img {
-    max-width:100%;
-    height: auto;
   }
 `;
