@@ -12,8 +12,9 @@ export const Online = (props) => {
                         <img src={props.data.img} />
                         <div style={{ paddingLeft: '3rem' }}>
                             <h4>{props.data.name}</h4>
-                            <p>期間 : {props.data.long}</p>
+                            <p>{props.data.long}</p>
                             <p>{props.data.description}</p>
+                            <Link to={props.data.to}><Button>コースの詳細はこちら</Button></Link>
                         </div>
                     </DisplayHandler>
                 </Content>

@@ -15,8 +15,8 @@ const Wrapper = styled.div`
 
 export const Seminars = (props) => {
     return (
-        <div>
-            <Fade right>
+        <div style={{ borderTop: '0.1px solid #dddddd', paddingTop: '4rem' }}>
+            <Fade left>
                 <Wrapper >
                     <div style={{ flex: 2 }}>
                         <Seminar data={props.long} />
@@ -24,7 +24,7 @@ export const Seminars = (props) => {
                     <div style={{ flex: 1 }} />
                 </Wrapper>
             </Fade>
-            <Fade left>
+            <Fade right>
                 <Wrapper >
                     <div style={{ flex: 1 }} />
                     <div style={{ flex: 2 }}>
@@ -32,7 +32,7 @@ export const Seminars = (props) => {
                     </div>
                 </Wrapper>
             </Fade>
-            <Fade bottom>
+            <Fade left>
                 <Wrapper >
                     <div style={{ flex: 2 }}>
                         <Seminar data={props.online} />

@@ -15,9 +15,9 @@ export const Seminar = (props) => {
                     </Link>
                     <h4>{props.data.name}</h4>
                     <p>{props.data.long}</p>
-                    {/* <div style={{ height: 30 }}> */}
-                    <p>{props.data.description}</p>
-                    {/* </div> */}
+                    <div style={{ padding: '0 1.5rem' }}>
+                        <p>{props.data.description}</p>
+                    </div>
                 </Content>
                 {/* <Link to={props.data.to}><Button>コースの詳細はこちら</Button></Link> */}
             </Card>

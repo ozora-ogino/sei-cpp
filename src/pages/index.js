@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import Fade from 'react-reveal/Fade';
 
 import { Layout, SEO } from 'components/common';
-import { Intro, Merit, News, Companies, Thumbnail, Seminars } from 'components/landing';
+import { Intro, Merit, News, Companies, Thumbnail, Seminars, Videos } from 'components/landing';
 import { Header } from 'components/theme';
 
 import google from 'assets/company-logos/google.png'
@@ -37,7 +37,7 @@ export default ({ data }) => {
     name: 'オンラインセミナー（参加無料）',
     long: '1年に2〜３回程度',
     img: onlineimg,
-    description: 'ビジネスアナリスト、デザイナー、コンサルタントに関する知識を身につけます。',
+    description: '世界中で働くプロフェッショナルがZoomを通してDXやコロナ対策の取り組みなど、実例を交えてプレゼンします。',
     to: '/seminars/long',
   }
   const long =
@@ -82,11 +82,10 @@ export default ({ data }) => {
     },
   ]
 
-  // const long = {
-  //   name: '総合コース',
-  //   long: '最長８週間',
-  //   description: 'こちらのコースでは上記二つのコース両方の取得を目指します。',
-  // }
+  const videos = [
+    "https://www.youtube.com/embed/mxCqJJU8U7w",
+  ]
+
 
   return (
     <Layout>
@@ -104,6 +103,7 @@ export default ({ data }) => {
       <Fade left>
         <Companies logos={companies} />
       </Fade>
+      <Videos data={videos} />
     </Layout >
   );
 };

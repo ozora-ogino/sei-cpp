@@ -6,3 +6,4 @@ export * from './Thumbnail';
 export * from './Companies';
 export * from './Merit';
 export * from './Seminars';
+export * from './Videos';
