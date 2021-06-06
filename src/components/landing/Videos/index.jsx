@@ -35,22 +35,22 @@ export const Grid = styled.div`
 `;
 
 export const Videos = (props) => {
-    return (
-        <Wrapper>
-            <h3>学での講義の様子</h3>
-            <Grid len={props.length}>
-                {props.data.map((video) => {
-                    return <Video url={video} />
-                })}
-            </Grid>
-        </Wrapper>
-    )
+  return (
+    <Wrapper>
+      <h3>大学での講義の様子</h3>
+      <Grid len={props.length}>
+        {props.data.map((video) => {
+          return <Video url={video} />
+        })}
+      </Grid>
+    </Wrapper>
+  )
 }
 
 const Video = (props) => {
-    return (
-        <div>
-            <iframe src={props.url} />
-        </div>
-    )
+  return (
+    <div>
+      <iframe src={props.url} />
+    </div>
+  )
 }
