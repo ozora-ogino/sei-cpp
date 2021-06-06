@@ -18,10 +18,12 @@ export const Button = styled.button`
   &:focus {
     outline: none;
   }
+    // transition: 0.1s ease-in;
+  transition-duration: 0.3s;
   &:hover {
     padding: 0.7rem 2.8rem;
     background: #0089ff;
-    transition: 0.1s ease-in;
+    transition: 0.2s ease-in;
   }
 
   &:disabled {
