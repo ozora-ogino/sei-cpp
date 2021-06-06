@@ -4,12 +4,15 @@ import Fade from 'react-reveal/Fade';
 import { Button } from 'components/common';
 import styled from 'styled-components';
 import top from 'assets/illustrations/topcover.png'
+import nasacpp from 'assets/illustrations/nasacpp.png'
 
 
 const Cover = styled.div`
 vertical-align: middle;
 img {
+  background: white;
   margin-bottom: 0;
+  width: 100%;
 }
 
   .cov{
@@ -28,7 +31,8 @@ img {
     @media (max-width: 580px) {
       display: none;
     }
-    color: white;
+    // color: white;
+    color: black;
   }
 
   .top-letter button {
@@ -77,12 +81,14 @@ export const Thumbnail = () => {
   return (
     <Cover>
       <div className='cov'>
-        <img src={top} />
+        <img src={nasacpp} />
+        {/* <img src={top} /> */}
         <Fade bottom >
           <div className='top-letter'>
             <div className='letter-h2'>
               <h2>現役プロフェッショナルが教える</h2>
               <h2>シリコンパレー式ビジネス革新</h2>
+              {/* <h2>NASAとカルフォルニア州立工科大学が教える</h2> */}
             </div>
             <Link to={'/contact'}><Button>お問い合わせ</Button></Link>
           </div>
