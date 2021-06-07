@@ -94,6 +94,8 @@ export default ({ data }) => {
 
   const videos = [
     "https://www.youtube.com/embed/mxCqJJU8U7w",
+    "https://www.youtube.com/embed/i0G2UXFvzls",
+    "https://www.youtube.com/embed/C9xc0dRr5Xo",
   ]
 
 

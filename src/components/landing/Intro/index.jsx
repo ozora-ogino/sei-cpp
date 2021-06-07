@@ -13,16 +13,21 @@ export const Intro = () => {
       <IntroWrapper as={Container}>
         <Details>
           <Card pad='3rem 1rem 2rem 1rem'>
-            <p style={{ marginBottom: '3rem' }}>我々はNASAとカリフォルニア州立工科大学と共同で<span style={{ color: '#2196f3', fontSize: '1.5rem' }}>
-              Global</span>で<span style={{ color: '#00acc1', fontSize: '1.5rem' }}>Creative</span>
-            な人材の育成をサポートしています。
-          </p>
+            <p style={{ color: 'black', marginBottom: '3rem' }}>
+              <span style={{ fontSize: '1.4rem' }}>
+                <span style={{ color: '#004ba0', fontWeight: 'bold' }}>NASA</span>と<span style={{ color: '#00701a', fontWeight: 'bold' }}>カリフォルニア州立工科大学</span>
+                が共同で行うプロジェクト
+                </span>
+            </p>
             <ul className='top-banner'>
-              {/* <li><img src={agile} /></li> */}
-              {/* <li><img src={ba} /></li> */}
               <Slider />
             </ul>
-            <p style={{ paddingTop: '4rem' }}>カルフォルニアでBAやAgileを学んでみませんか？</p>
+            {/* <p style={{ paddingTop: '4rem' }}>カルフォルニアでBAやAgileを学んでみませんか？</p> */}
+            <p style={{ paddingTop: '4rem', color: 'black' }}>
+              <span style={{ color: '#2196f3', fontSize: '2.0rem' }}>
+                Global</span>で<span style={{ color: '#00acc1', fontSize: '2.0rem' }}>Creative</span>
+            な人材の育成をサポートします
+            </p>
             {/* <Link to={'/contact'}><Button>お問い合わせ</Button></Link> */}
           </Card>
         </Details>

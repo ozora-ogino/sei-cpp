@@ -18,6 +18,7 @@ export const IntroWrapper = styled.div`
   margin-right: 0;
   align-items: center;
   vertical-align: middle;
+  width: 1000px;
 
   @media (max-width: 960px) {
     flex-direction: column;

@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
   display: table;
   margin: auto;
   @media (max-width: 960px) {
-    margin: .4rem;
+    margin: auto;
   }
 `;
 
