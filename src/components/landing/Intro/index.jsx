@@ -28,7 +28,6 @@ export const Intro = () => {
                 Global</span>で<span style={{ color: '#00acc1', fontSize: '2.0rem' }}>Creative</span>
             な人材の育成をサポートします
             </p>
-            {/* <Link to={'/contact'}><Button>お問い合わせ</Button></Link> */}
           </Card>
         </Details>
       </IntroWrapper>

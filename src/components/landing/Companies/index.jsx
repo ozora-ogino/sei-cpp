@@ -9,7 +9,7 @@ export const Companies = (props) => {
       <IntroWrapper as={Container}>
         <Card pad='3rem 0 0 0'>
           <Details>
-            <h2>Partners</h2>
+            <h2>講演者企業</h2>
           </Details>
           <LogoList>
             {
