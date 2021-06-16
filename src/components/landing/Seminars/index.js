@@ -3,7 +3,6 @@ import Fade from 'react-reveal/Fade';
 import styled from 'styled-components';
 
 import { Seminar } from './Seminar';
-import { Online } from './Online';
 
 const Wrapper = styled.div`
   @media (min-width: 961px) {
@@ -19,7 +18,7 @@ export const Seminars = (props) => {
             <Fade left>
                 <Wrapper >
                     <div style={{ flex: 2 }}>
-                        <Seminar data={props.long} />
+                        <Seminar data={props.online} />
                     </div>
                     <div style={{ flex: 1 }} />
                 </Wrapper>
@@ -28,14 +27,14 @@ export const Seminars = (props) => {
                 <Wrapper >
                     <div style={{ flex: 1 }} />
                     <div style={{ flex: 2 }}>
-                        <Seminar data={props.short} />
+                        <Seminar data={props.long} />
                     </div>
                 </Wrapper>
             </Fade>
             <Fade left>
                 <Wrapper >
                     <div style={{ flex: 2 }}>
-                        <Seminar data={props.online} />
+                        <Seminar data={props.short} />
                     </div>
                     <div style={{ flex: 1 }} />
                 </Wrapper>
