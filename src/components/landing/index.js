@@ -3,6 +3,7 @@ export * from './Contact';
 export * from './Courses';
 export * from './News';
 export * from './Thumbnail';
+export * from './Testimonials';
 export * from './Companies';
 export * from './Merit';
 export * from './Seminars';

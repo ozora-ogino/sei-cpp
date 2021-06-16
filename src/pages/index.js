@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import Fade from 'react-reveal/Fade';
 
 import { Layout, SEO } from 'components/common';
-import { Intro, Merit, News, Companies, Thumbnail, Seminars, Videos } from 'components/landing';
+import { Intro, Merit, News, Companies, Thumbnail, Testimonials, Seminars, Videos } from 'components/landing';
 import { Header } from 'components/theme';
 
 import google from 'assets/company-logos/google.png'
@@ -16,7 +16,7 @@ import esri from 'assets/company-logos/esri.png'
 import auriq from 'assets/company-logos/auriq.png'
 import longimg from 'assets/illustrations/long-seminar.png'
 import shortimg from 'assets/illustrations/short-seminar.png'
-import onlineimg from 'assets/illustrations/online.jpeg'
+import onlineimg from 'assets/illustrations/online-cover.png'
 
 /*
   TODO: Remove Courses directory
@@ -67,35 +67,27 @@ export default ({ data }) => {
     to: 'seminars/short',
   }
 
-  const courses = [
-    // {
-    //   name: 'Innovative Business Creator育成コース',
-    //   long: '最長4週間',
-    //   description: 'ビジネスアナリスト、デザイナー、コンサルタントに関する知識を身につけます。',
-    // },
-    // {
-    //   name: 'グローバル次世代ITプロフェッショナル育成コース',
-    //   long: '最長４週間',
-    //   description: 'プロジェクトマネージャー、エンジニアとして最新のシステム開発に関する知識を身につけます。',
-    // },
-    {
-      name: '長期コース',
-      long: '最長4週間',
-      description: 'ビジネスアナリスト、デザイナー、コンサルタントに関する知識を身につけます。',
-      to: '/seminars/long',
-    },
-    {
-      name: '短期エグゼクティブコース',
-      long: '2週間',
-      description: '短期間で最新のビジネスの手法や知識、技術をみにつけることができます。',
-      to: 'seminars/short',
-    },
-  ]
-
   const videos = [
     "https://www.youtube.com/embed/mxCqJJU8U7w",
     "https://www.youtube.com/embed/i0G2UXFvzls",
     "https://www.youtube.com/embed/C9xc0dRr5Xo",
+  ]
+
+  const testimonials = [
+    {
+      img: google,
+      name: 'google',
+      company: 'google',
+      message: 'google message',
+
+    },
+    {
+      img: google,
+      name: 'google',
+      company: 'google',
+      message: 'google message',
+
+    },
   ]
 
 
@@ -115,6 +107,7 @@ export default ({ data }) => {
       <Fade left>
         <Companies logos={companies} />
       </Fade>
+      {/* <Testimonials data={testimonials} /> */}
       <Videos data={videos} />
     </Layout >
   );
