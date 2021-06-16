@@ -48,7 +48,7 @@ export default ({ data }) => {
     long: '1年に2〜３回程度',
     img: onlineimg,
     description: '世界中で働くプロフェッショナルがZoomを通してDXやコロナ対策の取り組みなど、実例を交えてプレゼンします。',
-    to: '/seminars/long',
+    to: '/seminars/online',
   }
   const long =
   {
