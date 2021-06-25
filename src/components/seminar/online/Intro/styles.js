@@ -4,7 +4,7 @@ export const Top = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  padding: 4rem;
+  padding-top: 4rem;
   text-align: center;
 `;
 
