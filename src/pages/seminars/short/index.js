@@ -2,7 +2,7 @@ import React from 'react';
 import { Layout, SEO } from 'components/common';
 import { Speakers, Teachers } from 'components/seminar/common';
 import { Intro } from 'components/seminar/short';
-import jimmy from 'assets/speakers-icon/jimmy.png'
+import jimmy from 'assets/speakers-icon/jimmy.jpeg'
 import oishi from 'assets/speakers-icon/oishi.png'
 import jeff from 'assets/speakers-icon/jeff.png'
 import luca from 'assets/speakers-icon/luca.png'
