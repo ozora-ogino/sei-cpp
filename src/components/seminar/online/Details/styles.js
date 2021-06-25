@@ -9,8 +9,9 @@ export const Wrapper = styled.div`
 `;
 
 export const CardWrapper = styled.div`
+margin: 2rem;
   p {
-    margin: 0;
+    margin: .2rem;
     padding: 0;
   }
   img {
@@ -28,6 +29,9 @@ export const PersonInlineBlock = styled.div`
   img {
     height: 120px;
     border-radius: 50%;
+    @media (max-width: 680px) {
+    height: 80px;
+    }
   }
 `;
 
@@ -41,6 +45,9 @@ export const PDFInlineBlock = styled.div`
     height: 200px;
     margin: auto;
     margin-left: 4rem;
-    border-radius: 2rem;
+    border-radius: .6rem;
+    @media (max-width: 680px) {
+    height: 140px;
+    }
   }
 `;

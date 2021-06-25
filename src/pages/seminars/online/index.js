@@ -3,6 +3,7 @@ import { Layout, SEO } from 'components/common';
 import { Intro, Details } from 'components/seminar/online'
 import { Speakers } from 'components/seminar/common';
 import jimmy from 'assets/speakers-icon/jimmy.jpeg'
+import jimmyPDF from 'assets/pdf-cover/jimmy-2021S.png'
 import oishi from 'assets/speakers-icon/oishi.png'
 import jeff from 'assets/speakers-icon/jeff.png'
 import luca from 'assets/speakers-icon/luca.png'
@@ -17,8 +18,8 @@ export default () => {
 	]
 
 	const detailItems = [
-		{ title: "How to DX", name: "Jimmy Onishi", company: "Microsoft", personImg: jimmy, pdfImg: jimmy },
-		{ title: "How to DX", name: "Jeff Stanford", company: "Drive mode", personImg: jeff, pdfImg: jeff },
+		{ title: "コロナ下における働き方改革", name: "Jimmy Onishi", company: "Microsoft", personImg: jimmy, pdfImg: jimmyPDF },
+		// { title: "How to DX", name: "Jeff Stanford", company: "Drive mode", personImg: jeff, pdfImg: jeff },
 	]
 
 	return (
