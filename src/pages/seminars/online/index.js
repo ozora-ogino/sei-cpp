@@ -7,6 +7,7 @@ import jimmyPDF from 'assets/pdf/jimmy-2021-spring.pdf'
 import oishi from 'assets/speakers-icon/oishi.png'
 import jeff from 'assets/speakers-icon/jeff.png'
 
+
 export default () => {
 	const detailItems = [
 		{ title: "コロナ下における働き方改革", name: "Jimmy Onishi", company: "Microsoft", personImg: jimmy, pdfImg: jimmyPDF },
