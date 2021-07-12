@@ -21,7 +21,7 @@ export const Details = (props) => {
 };
 
 
-export const Detail = (props) => {
+const Detail = (props) => {
   return (
     <CardWrapper>
       <Card>
@@ -32,7 +32,9 @@ export const Detail = (props) => {
             <p>{props.company}</p>
           </PersonInlineBlock>
           <PDFInlineBlock>
-            <img src={props.pdfImg} />
+            <Link href={props.pdfImg}>
+              <img src={props.pdfImg} />
+            </Link>
           </PDFInlineBlock>
         </div>
       </Card>

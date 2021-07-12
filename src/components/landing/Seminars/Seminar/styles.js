@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   padding-bottom: 4rem;
   text-align: center;
-  max-width: 800px;
+  max-width: 700px;
   margin: auto;
 `;
 

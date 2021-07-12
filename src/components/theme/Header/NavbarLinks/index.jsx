@@ -9,11 +9,10 @@ const NavbarLinks = ({ desktop }) => {
     textDecoration: "underline",
     fontWeight: "bold",
   }
-
   return (
     <Wrapper desktop={desktop}>
       <Link to={"/"} activeStyle={current} >Home</Link>
-      <Link to={"/seminars"} activeStyle={current} partiallyActive={true} >Seminar</Link>
+      {/* <Link to={"/seminars"} activeStyle={current} partiallyActive={true} >Seminar</Link> */}
       <Link to={"/news"} activeStyle={current}  >News</Link>
       <Link to={"/contact"} activeStyle={current}  >Contact</Link>
       {/* <AnchorLink href="#projects">Projects</AnchorLink>
