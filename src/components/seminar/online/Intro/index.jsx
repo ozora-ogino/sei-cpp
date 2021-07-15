@@ -16,7 +16,10 @@ export const Intro = (props) => {
       <Wrapper as={Container}>
         <h1 style={{ marginBottom: '3rem' }}>オンラインセミナー</h1>
         <Card>
-          <p style={{ margin: '1rem' }}>{description}</p>
+          <div style={{ margin: '1rem' }}>
+            <p>{description}</p>
+            <p>過去のプレゼンテーションの一部資料を公開していますのでご活用ください。</p>
+          </div>
         </Card>
       </Wrapper>
     </Top>

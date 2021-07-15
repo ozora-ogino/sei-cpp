@@ -6,6 +6,9 @@ export const Top = styled.div`
 export const Wrapper = styled.div`
   padding-top: 4rem;
   text-align: center;
+  p {
+    margin: 0.5rem;
+  }
 `;
 
 export const Title = styled.div`
@@ -103,7 +106,7 @@ export const Button = styled.button`
 
 export const DocWrapper = styled.div`
   display:flex;
-  justify-content:center; 
+  justify-content:center;
   align-items: center;
   padding: 0 2rem;
   padding-top: 2rem;
@@ -121,7 +124,7 @@ export const DocWrapper = styled.div`
     text-align: left;
     color: #212121;
   }
-  
+
   a {
     color: #212121;
   }
@@ -133,4 +136,3 @@ export const DocWrapper = styled.div`
     border: none;
   }
 `
-
