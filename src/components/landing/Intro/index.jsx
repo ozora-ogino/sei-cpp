@@ -4,7 +4,8 @@ import { Root, Wrapper, IntroWrapper, Details } from './styles';
 import { Slider } from './Slider';
 // import nasacpp from 'assets/company-logos/nasa-cpp.png'
 // import agile from 'assets/illustrations/agile.png'
-import ba from 'assets/illustrations/ba.png'
+import cppLogo from 'assets/company-logos/cpp.png';
+import cpp from 'assets/illustrations/cpps.png';
 
 
 export const Intro = () => {
@@ -13,7 +14,17 @@ export const Intro = () => {
       <Wrapper >
         <IntroWrapper as={Container}>
           <Details>
-            <Card pad='3rem 1rem 2rem 1rem'>
+            <div style={{ display: 'flex', margin: 'auto', justifyContent: 'middle' }}>
+              <div style={{ flex: 1 }}>
+                <img src={cpp} />
+              </div>
+              <div style={{ flex: 2, height: '100%', margin: 'auto', textAlign: 'left', justifyContent: 'middle', paddingLeft: '2rem' }}>
+                <h2 style={{ color: 'black', textAlign: 'left' }}>About Us</h2>
+                <p>カリフォルニア州立工科大学 (Cal Poly) とカリフォルニア、日本の企業の有志のメンバーにより構成されています。</p>
+                <p>DX人材育成セミナーを20年以上続け、100を超える企業に参加してもらった実績があります。</p>
+              </div>
+            </div>
+            <Card pad='3rem 1rem 4rem 1rem'>
               {/* <p style={{ color: 'black', marginBottom: '3rem' }}>
                 <span style={{ fontSize: '1.4rem' }}>
                   <span style={{ color: '#004ba0', fontWeight: 'bold' }}>NASA</span>と<span style={{ color: '#00701a', fontWeight: 'bold' }}>カリフォルニア州立工科大学</span>
@@ -24,11 +35,11 @@ export const Intro = () => {
                 <Slider />
               </ul>
               {/* <p style={{ paddingTop: '4rem' }}>カルフォルニアでBAやAgileを学んでみませんか？</p> */}
-              <p style={{ paddingTop: '4rem', color: 'black' }}>
+              {/* <p style={{ paddingTop: '4rem', color: 'black' }}>
                 <span style={{ color: '#2196f3', fontSize: '2.0rem' }}>
                   Global</span>で<span style={{ color: '#00acc1', fontSize: '2.0rem' }}>Creative</span>
                 な人材の育成をサポートします
-              </p>
+              </p> */}
             </Card>
           </Details>
         </IntroWrapper>

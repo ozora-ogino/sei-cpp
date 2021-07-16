@@ -17,7 +17,6 @@ const Cover = styled.div`
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 8fr;
     gap: 1.2rem 1.2rem;
-    margin-bottom: 1rem;
 
     @media (max-width: 680px) {
       grid-template-columns: 1fr;
