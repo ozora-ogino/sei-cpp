@@ -5,6 +5,7 @@ import Fade from 'react-reveal/Fade';
 import { Layout, SEO } from 'components/common';
 import { Intro, Merit, News, Companies, Thumbnail, Testimonials, Seminars, Videos } from 'components/landing';
 import { Header } from 'components/theme';
+import { Global } from 'style/global';
 
 import google from 'assets/company-logos/google.png'
 import ms from 'assets/company-logos/ms.jpg'
@@ -92,24 +93,26 @@ export default ({ data }) => {
 
 
   return (
-    <Layout>
-      <SEO />
-      <Header />
-      <Thumbnail />
-      <Fade bottom >
-        <Intro />
-        <Merit />
-      </Fade>
-      <Seminars long={long} short={short} online={online} />
-      <Fade right big>
-        <News title={'更新情報'} data={data.allMarkdownRemark.edges} />
-      </Fade>
-      <Fade left>
-        <Companies logos={companies} />
-      </Fade>
-      {/* <Testimonials data={testimonials} /> */}
-      <Videos data={videos} />
-    </Layout >
+    <Global>
+      <Layout>
+        <SEO />
+        <Header />
+        <Thumbnail />
+        <Fade bottom >
+          <Intro />
+          <Merit />
+        </Fade>
+        <Seminars long={long} short={short} online={online} />
+        <Fade right big>
+          <News title={'更新情報'} data={data.allMarkdownRemark.edges} />
+        </Fade>
+        <Fade left>
+          <Companies logos={companies} />
+        </Fade>
+        {/* <Testimonials data={testimonials} /> */}
+        <Videos data={videos} />
+      </Layout >
+    </Global>
   );
 };
 
