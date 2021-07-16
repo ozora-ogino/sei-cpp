@@ -94,7 +94,7 @@ export const Nasa = () => {
       <div className='cover'>
         <div className='top-message'>
           <div className='letter-h2'>
-            <h2>NASA × CPP</h2>
+            <h2>NASA × Cal Poly</h2>
             <p>NASAと共同で皆様のイノベーションを支援します。</p>
           </div>
           <a href={'https://www.cpp.edu/cba/nasacpp/index.shtml'}><p>Cal Poly HP</p></a>
