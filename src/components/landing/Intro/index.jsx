@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Card } from 'components/common';
-import { Root, Wrapper, IntroWrapper, Details } from './styles';
+import { Root, Wrapper, IntroWrapper, Details, AboutUs } from './styles';
 import { Slider } from './Slider';
 // import nasacpp from 'assets/company-logos/nasa-cpp.png'
 // import agile from 'assets/illustrations/agile.png'
@@ -14,16 +14,16 @@ export const Intro = () => {
       <Wrapper >
         <IntroWrapper as={Container}>
           <Details>
-            <div style={{ display: 'flex', margin: 'auto', justifyContent: 'middle' }}>
-              <div style={{ flex: 1 }}>
+            <AboutUs>
+              <div className='right'>
                 <img src={cpp} />
               </div>
-              <div style={{ flex: 2, height: '100%', margin: 'auto', textAlign: 'left', justifyContent: 'middle', paddingLeft: '2rem' }}>
-                <h2 style={{ color: 'black', textAlign: 'left' }}>About Us</h2>
+              <div className='left'>
+                <h2>About Us</h2>
                 <p>カリフォルニア州立工科大学 (Cal Poly) とカリフォルニア、日本の企業の有志のメンバーにより構成されています。</p>
                 <p>DX人材育成セミナーを20年以上続け、100を超える企業に参加してもらった実績があります。</p>
               </div>
-            </div>
+            </AboutUs>
             <Card pad='3rem 1rem 4rem 1rem'>
               {/* <p style={{ color: 'black', marginBottom: '3rem' }}>
                 <span style={{ fontSize: '1.4rem' }}>

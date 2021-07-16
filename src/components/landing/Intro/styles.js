@@ -32,6 +32,7 @@ export const IntroWrapper = styled.div`
   }
 `;
 
+
 export const Details = styled.div`
 padding-top: 4rem;
 padding-bottom: 4rem;
@@ -123,5 +124,28 @@ padding-bottom: 4rem;
   .top-banner li img {
     max-width:100%;
     height: auto;
+  }
+`;
+
+
+export const AboutUs = styled.div`
+  margin: auto;
+  justify-content: middle;
+  display: flex;
+  .right {
+    flex: 1;
+  }
+  .left {
+    flex: 2;
+    height: 100%;
+    margin: auto;
+    padding-left: 2rem;
+    text-align: left;
+    justify-content: middle;
+  }
+
+  h2 {
+    color: black;
+    text-align: left;
   }
 `;
