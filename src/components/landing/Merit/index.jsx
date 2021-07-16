@@ -1,11 +1,6 @@
 import React from 'react';
-import { Link } from 'gatsby';
-import { Header } from 'components/theme';
-import { Container, Button } from 'components/common';
-import { Thumbnail } from 'components/landing';
+import { Container } from 'components/common';
 import { Wrapper, IntroWrapper, Details, Title, Card } from './styles';
-import agile from 'assets/illustrations/agile.png'
-import ba from 'assets/illustrations/ba.png'
 import styled from 'styled-components';
 
 
@@ -29,7 +24,7 @@ export const Merit = () => {
                 1. 自社の文化に沿ったDXのできる人材を作り出す
                 <br />2. カリフォルニアで働くプロフェッショナルとの交流
                 <br />3. NASAとCalPolyの共同プログラムに参加できる
-                </h3>
+              </h3>
             </div>
             {/* <Link to={'/contact'}><Button>お問い合わせ</Button></Link> */}
           </Card>

@@ -14,16 +14,17 @@ export const Button = styled.button`
   -ms-user-select: none;
   user-select: none;
   color: #fff;
-  background: #007fed;
+  // background: #007fed;
+  background: var(--secondary);
   &:focus {
     outline: none;
   }
     // transition: 0.1s ease-in;
-  transition-duration: 0.3s;
+  transition-duration: 0.1s;
   &:hover {
-    padding: 0.7rem 2.8rem;
-    background: #0089ff;
-    transition: 0.2s ease-in;
+    // background: #0089ff;
+    background: var(--secondary-dark);
+    transition: 0.1s ease-in;
   }
 
   &:disabled {
@@ -33,7 +34,7 @@ export const Button = styled.button`
   ${({ secondary }) =>
     secondary &&
     `
-		background: #001F3F;
+		background: var(--secondary);
 	`}
 `;
 

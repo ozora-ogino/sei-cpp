@@ -8,3 +8,4 @@ export * from './Companies';
 export * from './Merit';
 export * from './Seminars';
 export * from './Videos';
+export * from './NasaIC';

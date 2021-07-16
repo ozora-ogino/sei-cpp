@@ -1,13 +1,14 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  padding: 28rem 0 4rem 0;
+  background: var(--primary);
+  // padding: 28rem 0 4rem 0;
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
 
   @media (max-width: 1960px) {
-    padding: 14rem 0 4rem;
+    padding: 3rem 0 4rem;
   }
 `;
 
@@ -45,7 +46,8 @@ export const Details = styled.div`
   h2,
   a,
   span {
-    color: #373737;
+    // color: #373737;
+    color: white;
   }
 
   @media (max-width: 680px) {

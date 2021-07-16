@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import Fade from 'react-reveal/Fade';
 import { Button } from 'components/common';
 import styled from 'styled-components';
-import coverImg from 'assets/illustrations/cover-white-letter.svg'
+import coverImg from 'assets/illustrations/nasa.svg'
 
 
 
@@ -26,8 +26,14 @@ const Cover = styled.div`
 
   img {
     margin-bottom: 0;
-    width: 100%;
+    width: 50%;
     margin: auto;
+    padding: 2rem;
+  }
+
+  a {
+    text-decoration: underline;
+    color: var(--secondary);
   }
 
   .top-message {
@@ -48,6 +54,11 @@ const Cover = styled.div`
           font-size: 13pt;
       }
     }
+
+    p {
+      text-align: left;
+      margin: 0.7rem;
+    }
   }
 
   .bottom-message {
@@ -62,6 +73,10 @@ const Cover = styled.div`
       margin: 0.5rem;
     }
 
+    p {
+      margin: 0.5rem;
+    }
+
     @media (min-width: 681px) {
     display: None;
     }
@@ -69,25 +84,25 @@ const Cover = styled.div`
 `;
 
 
-export const Thumbnail = () => {
+export const Nasa = () => {
   return (
     <Cover>
       <div className='cover'>
         <Fade bottom >
           <div className='top-message'>
             <div className='letter-h2'>
-              <h2>我々はSilicon Valleyのプロフェッショナルと共に</h2>
-              <h2>日本のDXを支援しています。</h2>
+              <h2>NASA × CPP</h2>
+              <p>NASAと共同で皆様のイノベーションを支援します。</p>
             </div>
-            <Link to={'/contact'}><Button>お問い合わせ</Button></Link>
+            <a href={'https://www.cpp.edu/cba/nasacpp/index.shtml'}><p>Cal Poly HP</p></a>
           </div>
         </Fade>
         <img src={coverImg} />
         <div className='bottom-message'>
           <div className='letter-h2'>
-            <h2>我々はSilicon Valleyのプロフェッショナルと共に</h2>
-            <h2>日本のDXを支援しています。</h2>
-            <Link to={'/contact'}><Button>お問い合わせ</Button></Link>
+            <h2>NASA × CPP</h2>
+            <p>NASAと共同で皆様のイノベーションを支援します。</p>
+            <a href={'https://www.cpp.edu/cba/nasacpp/index.shtml'}><p>Cal Poly HP</p></a>
           </div>
         </div>
       </div>

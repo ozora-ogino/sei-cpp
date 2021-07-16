@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Top = styled.div`
   border-top: 0.1px solid #dddddd;
+  background: var(--primary);
 `;
 
 export const Wrapper = styled.div`
@@ -12,7 +13,8 @@ export const Title = styled.div`
   text-align: center;
   padding: 1.8rem;
   h2 {
-    color: #37474f;
+    // color: #37474f;
+    color: white;
     font-size: 24pt;
     media (max-width: 680px) {
     font-size: 20pt;
@@ -78,15 +80,17 @@ export const Button = styled.button`
   -ms-user-select: none;
   user-select: none;
   color: #fff;
-  background: #007fed;
+  // background: #007fed;
+  background: var(--secondary);
 
   &:focus {
     outline: none;
   }
 
   &:hover{
-    padding: 0.4rem 2.8rem;
-    background: #0089ff;
+    // padding: 0.4rem 2.8rem;
+    // background: #0089ff;
+    background: var(--secondary-dark);
     transition: 0.1s ease-in;
   }
 
