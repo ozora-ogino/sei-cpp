@@ -14,12 +14,12 @@ export const Intro = () => {
         <IntroWrapper as={Container}>
           <Details>
             <Card pad='3rem 1rem 2rem 1rem'>
-              <p style={{ color: 'black', marginBottom: '3rem' }}>
+              {/* <p style={{ color: 'black', marginBottom: '3rem' }}>
                 <span style={{ fontSize: '1.4rem' }}>
                   <span style={{ color: '#004ba0', fontWeight: 'bold' }}>NASA</span>と<span style={{ color: '#00701a', fontWeight: 'bold' }}>カリフォルニア州立工科大学</span>
                   が共同で行うプロジェクト
                 </span>
-              </p>
+              </p> */}
               <ul className='top-banner'>
                 <Slider />
               </ul>

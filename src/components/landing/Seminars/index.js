@@ -6,46 +6,39 @@ import { Seminar } from './Seminar';
 
 const Root = styled.div`
 //   background: var(--primary);
+    // border-top: 0.1px solid #dddddd;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    margin: auto;
 `;
 
 const Wrapper = styled.div`
-  @media (min-width: 961px) {
+  .item {
+      flex: 1;
+  }
+
+  @media (min-width: 1261px) {
       display: flex
   }
-  @media (max-width: 960px) {
+  @media (max-width: 1260px) {
   }
 `;
 
 export const Seminars = (props) => {
     return (
         <Root>
-            <div style={{ borderTop: '0.1px solid #dddddd', paddingTop: '4rem' }}>
-                <Fade left>
-                    <Wrapper >
-                        <div style={{ flex: 2 }}>
-                            <Seminar data={props.online} />
-                        </div>
-                        <div style={{ flex: 1 }} />
-                    </Wrapper>
-                </Fade>
-                <Fade right>
-                    <Wrapper >
-                        <div style={{ flex: 1 }} />
-                        <div style={{ flex: 2 }}>
-                            <Seminar data={props.long} />
-                        </div>
-                    </Wrapper>
-                </Fade>
-                <Fade left>
-                    <Wrapper >
-                        <div style={{ flex: 2 }}>
-                            <Seminar data={props.short} />
-                        </div>
-                        <div style={{ flex: 1 }} />
-                    </Wrapper>
-                    {/* <Online data={props.online} /> */}
-                </Fade>
-            </div >
+            <Wrapper >
+                <div className='item'>
+                    <Seminar data={props.online} />
+                </div>
+                <div className='item'>
+                    <Seminar data={props.long} />
+                </div>
+                <div className='item'>
+                    <Seminar data={props.short} />
+                </div>
+            </Wrapper>
+            {/* <Online data={props.online} /> */}
         </Root>
     );
 }

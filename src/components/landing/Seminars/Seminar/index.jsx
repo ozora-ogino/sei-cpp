@@ -6,7 +6,7 @@ import { Wrapper, Content } from './styles';
 export const Seminar = (props) => {
     return (
         <Wrapper as={Container} id="projects">
-            <Card pad='0rem 0rem 0 0rem' radius='.6rem'>
+            <Card pad='0rem 0rem 1rem 0rem' radius='.6rem'>
                 <Content>
                     <Link to={props.data.to}>
                         <div style={{ overflow: 'hidden', marginBottom: '1rem', borderRadius: '.6rem .6rem 0 0' }}>

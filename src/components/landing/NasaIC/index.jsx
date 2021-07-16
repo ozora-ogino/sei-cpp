@@ -43,12 +43,13 @@ const Cover = styled.div`
     @media (max-width: 680px) {
       display: None;
     }
+
     h2 {
       text-align: left;
       margin: 0.7rem;
 
       @media (max-width: 1240px) {
-          font-size: 16pt;
+          font-size: 24pt;
       }
       @media (max-width: 1000px) {
           font-size: 13pt;
@@ -64,10 +65,13 @@ const Cover = styled.div`
   .bottom-message {
     text-align: center;
     margin: auto;
+    padding-bottom: 1rem;
+
     .letter-h2 {
       margin: auto;
       text-align: left;
     }
+
     h2 {
       font-size: 16pt;
       margin: 0.5rem;
@@ -88,15 +92,13 @@ export const Nasa = () => {
   return (
     <Cover>
       <div className='cover'>
-        <Fade bottom >
-          <div className='top-message'>
-            <div className='letter-h2'>
-              <h2>NASA × CPP</h2>
-              <p>NASAと共同で皆様のイノベーションを支援します。</p>
-            </div>
-            <a href={'https://www.cpp.edu/cba/nasacpp/index.shtml'}><p>Cal Poly HP</p></a>
+        <div className='top-message'>
+          <div className='letter-h2'>
+            <h2>NASA × CPP</h2>
+            <p>NASAと共同で皆様のイノベーションを支援します。</p>
           </div>
-        </Fade>
+          <a href={'https://www.cpp.edu/cba/nasacpp/index.shtml'}><p>Cal Poly HP</p></a>
+        </div>
         <img src={coverImg} />
         <div className='bottom-message'>
           <div className='letter-h2'>

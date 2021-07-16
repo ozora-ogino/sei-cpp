@@ -98,16 +98,12 @@ export default ({ data }) => {
         <SEO />
         <Header />
         <Thumbnail />
-        <Fade bottom >
-          <Intro />
-          {/* <Merit /> */}
-        </Fade>
+        <Intro />
+        {/* <Merit /> */}
         <Nasa />
         <Seminars long={long} short={short} online={online} />
         <News title={'News'} data={data.allMarkdownRemark.edges} />
-        <Fade left>
-          <Companies logos={companies} />
-        </Fade>
+        <Companies logos={companies} />
         {/* <Testimonials data={testimonials} /> */}
         <Videos data={videos} />
       </Layout >
