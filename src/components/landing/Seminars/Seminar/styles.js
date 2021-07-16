@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+export const Root = styled.div`
+  background: var(--primary);
+`;
+
 export const Wrapper = styled.div`
   padding-bottom: 4rem;
   text-align: center;

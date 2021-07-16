@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Container, Card } from 'components/common';
-import { Wrapper, Content, Button } from './styles';
+import { Wrapper, Content } from './styles';
 
 export const Seminar = (props) => {
     return (

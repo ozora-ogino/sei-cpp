@@ -1,5 +1,11 @@
 import styled from 'styled-components';
 
+export const Root = styled.div`
+  // background: var(--primary);
+  }
+`;
+
+
 export const Wrapper = styled.div`
   height: 100%;
   display: table;
@@ -27,6 +33,7 @@ export const IntroWrapper = styled.div`
 
 export const Details = styled.div`
 padding-top: 4rem;
+padding-bottom: 4rem;
   // flex: 1;
 
   @media (max-width: 960px) {

@@ -4,6 +4,10 @@ import styled from 'styled-components';
 
 import { Seminar } from './Seminar';
 
+const Root = styled.div`
+//   background: var(--primary);
+`;
+
 const Wrapper = styled.div`
   @media (min-width: 961px) {
       display: flex
@@ -14,32 +18,34 @@ const Wrapper = styled.div`
 
 export const Seminars = (props) => {
     return (
-        <div style={{ borderTop: '0.1px solid #dddddd', paddingTop: '4rem' }}>
-            <Fade left>
-                <Wrapper >
-                    <div style={{ flex: 2 }}>
-                        <Seminar data={props.online} />
-                    </div>
-                    <div style={{ flex: 1 }} />
-                </Wrapper>
-            </Fade>
-            <Fade right>
-                <Wrapper >
-                    <div style={{ flex: 1 }} />
-                    <div style={{ flex: 2 }}>
-                        <Seminar data={props.long} />
-                    </div>
-                </Wrapper>
-            </Fade>
-            <Fade left>
-                <Wrapper >
-                    <div style={{ flex: 2 }}>
-                        <Seminar data={props.short} />
-                    </div>
-                    <div style={{ flex: 1 }} />
-                </Wrapper>
-                {/* <Online data={props.online} /> */}
-            </Fade>
-        </div >
+        <Root>
+            <div style={{ borderTop: '0.1px solid #dddddd', paddingTop: '4rem' }}>
+                <Fade left>
+                    <Wrapper >
+                        <div style={{ flex: 2 }}>
+                            <Seminar data={props.online} />
+                        </div>
+                        <div style={{ flex: 1 }} />
+                    </Wrapper>
+                </Fade>
+                <Fade right>
+                    <Wrapper >
+                        <div style={{ flex: 1 }} />
+                        <div style={{ flex: 2 }}>
+                            <Seminar data={props.long} />
+                        </div>
+                    </Wrapper>
+                </Fade>
+                <Fade left>
+                    <Wrapper >
+                        <div style={{ flex: 2 }}>
+                            <Seminar data={props.short} />
+                        </div>
+                        <div style={{ flex: 1 }} />
+                    </Wrapper>
+                    {/* <Online data={props.online} /> */}
+                </Fade>
+            </div >
+        </Root>
     );
 }

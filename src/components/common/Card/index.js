@@ -4,7 +4,8 @@ export const Card = styled.div`
   // padding: 1rem;
   padding: ${({ pad }) => (pad != undefined ? pad : '1rem')};
   margin: ${({ margin }) => (margin != undefined ? margin : '0')};
-  background: #ffffff;
+  background: ${({ background }) => (background != undefined ? background : '#ffffff')};
+  // background: #ffffff;
   height: 100%;
   // border: solid 1px #cfd8dc;
   -webkit-box-shadow: 0px 3px 17px -2px rgba(0,0,0,0.13);
