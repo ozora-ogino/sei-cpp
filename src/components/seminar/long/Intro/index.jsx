@@ -3,7 +3,8 @@ import { Link } from 'gatsby';
 import { Header } from 'components/theme';
 import { Container, Card } from 'components/common';
 import { ListItems, Targets } from '../../common/ListItems';
-import { Wrapper, Grid, Top, Button, DocWrapper } from './styles';
+import { Wrapper, Grid, Button, DocWrapper, PDFWrapper } from './styles';
+import { Global } from 'style/global';
 import isshiki from 'assets/speakers-icon/isshiki-2.png'
 import seminarPDF from 'assets/pdf/cpp2021.pdf';
 
@@ -26,9 +27,10 @@ const participants = [
   '自ら成長を求めている方',
 ]
 
+
 export const Intro = (props) => {
   return (
-    <Top>
+    <Global>
       <Header />
       <Wrapper as={Container}>
         <h1 style={{ marginBottom: '3rem' }}>長期セミナー</h1>
@@ -37,28 +39,24 @@ export const Intro = (props) => {
             <DocWrapper>
               <img src={isshiki} />
               <div>
-                <p>初めまして。Cal Poly（カリフォルニア州立工科大学）Pomona校にて教授を務めております一色浩一郎です。
-                </p>
+                {/* <p>初めまして。Cal Poly（カリフォルニア州立工科大学）Pomona校にて教授を務めております一色浩一郎です。 */}
+                <h3>一色 浩一郎 (カリフォルニア州立工科大学 教授)</h3>
+                {/* </p> */}
                 <p>
                   本セミナーはロサンゼルスにあるCal Poly Pomona校を拠点として行います。
                   Cal PolyはUberをはじめ多くの事業を育んできました。
                   セミナーでは大学からだけではなく企業からも講演者をお招きして今起きている<span style={{ fontWeight: 'bold' }}>Disruption（破壊的創造）</span>、
-                  今後予想されるDisruptionを支える最新技術をお伝え致します。
-                </p>
-                <p>
-                  そして、現在のIT業界を引っ張る会社のクリエイティブ・リーダー達と膝詰めで意見交換をし、各社を訪問しながら議論する機会を設けました。
-                  各社に訪問し、クリエイティブ・リーダー達と議論することで、必ずや、皆様の会社の未来への道筋が見えてくることと存じます。
-                  これだけの企業と一気に交流できるのはまたとない機会かと思いますので、このチャンスをご活用ください
+                  今後予想されるDisruptionを支える最新技術をお伝え致し、御社のDXをサポート致します。
                 </p>
               </div>
             </DocWrapper>
           </Card>
         </div>
         <Card margin='3rem 0'>
-          <DocWrapper>
+          <PDFWrapper>
             <img src={seminarPDF} width='200rem' />
             <Link href={seminarPDF}><Button>資料はこちら</Button></Link>
-          </DocWrapper>
+          </PDFWrapper>
         </Card>
         <Targets data={participants} title='本セミナーの対象者' color='##ec407a' />
         <Grid>
@@ -66,6 +64,6 @@ export const Intro = (props) => {
           <ListItems data={effects} title='得られる効果' />
         </Grid>
       </Wrapper>
-    </Top>
+    </Global >
   );
 };

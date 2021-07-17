@@ -1,8 +1,5 @@
 import styled from 'styled-components';
 
-export const Top = styled.div`
-`;
-
 export const Wrapper = styled.div`
   padding: 4rem;
   text-align: center;
@@ -101,16 +98,57 @@ export const Button = styled.button`
 
 
 export const DocWrapper = styled.div`
-  display:flex;
-  justify-content:center; 
+  justify-content:center;
   align-items: center;
   padding: 0 2rem;
   padding-top: 2rem;
-  // background: #ffffff;
   height: 100%;
-  // border: solid 1px #cfd8dc;
-  // border-radius: .3rem;
-  // margin-bottom: 3rem;
+
+  @media (max-width: 960px) {
+    font-size: 11pt;
+  }
+
+  @media (min-width: 960px) {
+    display:flex;
+    img {
+      flex: 1;
+    }
+    div {
+      flex: 4;
+    }
+  }
+
+
+  h3 {
+    color: #212121;
+    text-align: left;
+    font-size: 16pt;
+  }
+
+  p {
+    text-align: left;
+    color: #212121;
+  }
+
+  a {
+    color: #212121;
+  }
+  img {
+    margin-right: 2rem;
+  }
+  @media (max-width: 680px) {
+    border-radius: 0;
+    border: none;
+  }
+`
+
+export const PDFWrapper = styled.div`
+  justify-content:center;
+  align-items: center;
+  padding: 0 2rem;
+  padding-top: 2rem;
+  height: 100%;
+  display: flex;
 
   h4 {
     color: #212121;
@@ -120,7 +158,7 @@ export const DocWrapper = styled.div`
     text-align: left;
     color: #212121;
   }
-  
+
   a {
     color: #212121;
   }
