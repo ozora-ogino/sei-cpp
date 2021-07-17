@@ -4,7 +4,6 @@ import { graphql } from 'gatsby';
 import { Layout, SEO } from 'components/common';
 import { Intro, Merit, News, Companies, Thumbnail, Testimonials, Seminars, Videos, Nasa } from 'components/landing';
 import { Header } from 'components/theme';
-import { Global } from 'style/global';
 
 import google from 'assets/company-logos/google.png'
 import ms from 'assets/company-logos/ms.jpg'
@@ -88,21 +87,19 @@ export default ({ data }) => {
 
 
   return (
-    <Global>
-      <Layout>
-        <SEO />
-        <Header />
-        <Thumbnail />
-        <Intro />
-        {/* <Merit /> */}
-        <Nasa />
-        <Seminars long={long} short={short} online={online} />
-        <News title={'News'} data={data.allMarkdownRemark.edges} />
-        <Companies logos={companies} />
-        {/* <Testimonials data={testimonials} /> */}
-        <Videos data={videos} />
-      </Layout >
-    </Global>
+    <Layout>
+      <SEO />
+      <Header />
+      <Thumbnail />
+      <Intro />
+      {/* <Merit /> */}
+      <Nasa />
+      <Seminars long={long} short={short} online={online} />
+      <News title={'News'} data={data.allMarkdownRemark.edges} />
+      <Companies logos={companies} />
+      {/* <Testimonials data={testimonials} /> */}
+      <Videos data={videos} />
+    </Layout >
   );
 };
 

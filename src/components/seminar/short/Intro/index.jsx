@@ -5,7 +5,6 @@ import { Header } from 'components/theme';
 import { Container } from 'components/common';
 import { Speakers, Teachers, Strong, Targets, TeachersIntro } from 'components/seminar/common'
 import { DocWrapper } from './styles';
-import { Global } from 'style/global';
 
 import isshiki from 'assets/speakers-icon/isshiki.png'
 import people from 'assets/illustrations/participants.svg';
@@ -58,7 +57,7 @@ const teachers = [
 
 export const Intro = (props) => {
   return (
-    <Global>
+    <div>
       <Header />
       <Wrapper as={Container}>
         <h1>短期セミナー</h1>
@@ -82,6 +81,6 @@ export const Intro = (props) => {
         <Speakers data={speakers} />
         <Teachers data={teachers} />
       </TeachersIntro>
-    </Global >
+    </div>
   );
 };

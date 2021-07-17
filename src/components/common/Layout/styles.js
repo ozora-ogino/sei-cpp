@@ -1,7 +1,16 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const Global = createGlobalStyle`
+
+
   html {
+
+    --primary: #004A3E;
+    --primary-dark: #003E34;
+    --primary-light: #005A4C;
+    --secondary: #eb4605;
+    --secondary-dark: #A74605;
+
     font-family: 'Roboto', Helvetica, sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
