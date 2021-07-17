@@ -22,12 +22,7 @@ import onlineimg from 'assets/illustrations/online-cover.png'
   TODO: Remove Courses directory
 
   TODO: 2021/06/06
-    - Add SEI Cal Poly English YoutubTOD:
-    - Cal Poly + Nasa!!!!!
-    - America de yukkuri manaberu!
     - Decide koe of participants from inet Shigitani-san, NTT DST Ueki-san Asia-kosoku Ogawa-san or Yuiko-bo
-    - CPP Purpose is to create innovative person
-    - VOOCA is important
 */
 
 export default ({ data }) => {
