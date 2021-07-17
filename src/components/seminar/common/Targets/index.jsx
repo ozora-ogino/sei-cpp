@@ -3,12 +3,13 @@ import { Container } from 'components/common';
 import styled from 'styled-components';
 
 export const Targets = (props) => {
-	const Wrapper = styled.div`
+  const Wrapper = styled.div`
   color: white;
   text-align: center;
   padding-bottom: 2rem;
   img {
     width: 80%;
+    max-width: 420px;
   }
 
   @media (min-width: 960px) {
@@ -31,17 +32,17 @@ export const Targets = (props) => {
   }
 `;
 
-	return (
-		<div style={{ background: 'var(--primary)' }}>
-			<Wrapper as={Container}>
-				<img src={props.img} />
-				<div className='flex-item'>
-					<h3>{props.title}</h3>
-					{props.data.map((item) => {
-						return <p>{item}</p>
-					})}
-				</div>
-			</Wrapper>
-		</div>
-	)
+  return (
+    <div style={{ background: 'var(--primary)' }}>
+      <Wrapper as={Container}>
+        <img src={props.img} />
+        <div className='flex-item'>
+          <h3>{props.title}</h3>
+          {props.data.map((item) => {
+            return <p>{item}</p>
+          })}
+        </div>
+      </Wrapper>
+    </div>
+  )
 }
