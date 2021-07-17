@@ -2,9 +2,6 @@ import React from 'react';
 import { Container, Card } from 'components/common';
 import { Root, Wrapper, IntroWrapper, Details, AboutUs } from './styles';
 import { Slider } from './Slider';
-// import nasacpp from 'assets/company-logos/nasa-cpp.png'
-// import agile from 'assets/illustrations/agile.png'
-import cppLogo from 'assets/company-logos/cpp.png';
 import cpp from 'assets/illustrations/cpps.png';
 
 
