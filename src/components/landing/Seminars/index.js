@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { Seminar } from './Seminar';
 
 const Root = styled.div`
-//   background: var(--primary);
+//   background: var(--secondary-bg);
     // border-top: 0.1px solid #dddddd;
     padding-top: 5rem;
     padding-bottom: 2rem;

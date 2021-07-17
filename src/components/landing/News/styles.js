@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 export const Top = styled.div`
-  border-top: 0.1px solid #dddddd;
-  background: var(--primary);
+  // background: var(--primary);
 `;
 
 export const Wrapper = styled.div`
@@ -13,8 +12,8 @@ export const Title = styled.div`
   text-align: center;
   padding: 1.8rem;
   h2 {
-    // color: #37474f;
-    color: white;
+    color: #37474f;
+    // color: white;
     font-size: 24pt;
     media (max-width: 680px) {
     font-size: 20pt;
