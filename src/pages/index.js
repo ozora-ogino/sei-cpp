@@ -19,8 +19,6 @@ import shortimg from 'assets/illustrations/short-seminar.png'
 import onlineimg from 'assets/illustrations/online-cover.png'
 
 /*
-  TODO: Remove Courses directory
-
   TODO: 2021/06/06
     - Decide koe of participants from inet Shigitani-san, NTT DST Ueki-san Asia-kosoku Ogawa-san or Yuiko-bo
 */
@@ -37,6 +35,7 @@ export default ({ data }) => {
     { img: esri, size: "200" },
     { img: auriq, size: "200" },
   ]
+
   const online =
   {
     name: 'オンラインセミナー（参加無料）',
@@ -45,6 +44,7 @@ export default ({ data }) => {
     description: '世界中で働くプロフェッショナルがZoomを通してDXやコロナ対策の取り組みなど、実例を交えてプレゼンします。',
     to: '/seminars/online',
   }
+
   const long =
   {
     name: '長期コース',
@@ -53,6 +53,7 @@ export default ({ data }) => {
     description: 'ビジネスアナリスト、デザイナー、コンサルタントに関する知識を身につけます。',
     to: '/seminars/long',
   }
+
   const short =
   {
     name: '短期エグゼクティブコース',
