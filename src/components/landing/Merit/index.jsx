@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container } from 'components/common';
 import { Wrapper, IntroWrapper, Details, Title, Card } from './styles';
-import styled from 'styled-components';
 
 
 

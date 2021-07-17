@@ -1,7 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
-import Fade from 'react-reveal/Fade';
-import { Button } from 'components/common';
 import styled from 'styled-components';
 import coverImg from 'assets/illustrations/nasa.svg'
 

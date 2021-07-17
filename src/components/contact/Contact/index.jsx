@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Container } from 'components/common';
-import { Wrapper, IntroWrapper, Details, Thumbnail, Greeting } from './styles';
+import { Wrapper, IntroWrapper, Details } from './styles';
 import { Header } from 'components/theme';
 
 

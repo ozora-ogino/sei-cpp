@@ -1,6 +1,5 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import Fade from 'react-reveal/Fade';
 
 import { Layout, SEO } from 'components/common';
 import { Intro, Merit, News, Companies, Thumbnail, Testimonials, Seminars, Videos, Nasa } from 'components/landing';

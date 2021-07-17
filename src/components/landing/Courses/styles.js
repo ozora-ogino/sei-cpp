@@ -93,8 +93,3 @@ export const Button = styled.button`
 		background: #001F3F;
 	`}
 `;
-
-export const Long = styled.div`
-  text-align: center;
-  margin-top: 3rem;
-`;

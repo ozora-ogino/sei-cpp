@@ -1,7 +1,7 @@
 import React from 'react';
 import { Header } from 'components/theme';
 import { Container, Morpher } from 'components/common';
-import { Wrapper, IntroWrapper, Details, Contact, Thumbnail } from './styles';
+import { Wrapper, IntroWrapper, Details } from './styles';
 
 const texts = {
   text: "NOT FOUND",
@@ -27,7 +27,7 @@ export const Content = () => {
       <IntroWrapper as={Container}>
         <Details>
           <h1>404</h1>
-          <Morpher to="/" texts={texts} element="h1"/>
+          <Morpher to="/" texts={texts} element="h1" />
           <p>404 page not found</p>
         </Details>
       </IntroWrapper>

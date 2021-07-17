@@ -73,18 +73,6 @@ export const Details = styled.div`
   }
 `;
 
-export const Thumbnail = styled.div`
-  flex: 1;
-
-  @media (max-width: 960px) {
-    width: 100%;
-  }
-
-  img {
-    width: 100%;
-  }
-`;
-
 export const LogoList = styled.div`
   padding-top: 1rem;
   height: 100%;

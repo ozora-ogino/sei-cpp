@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Container, Card } from 'components/common';
-import { Wrapper, Grid, Item, Content, Title, Button, Long } from './styles';
+import { Wrapper, Grid, Item, Content, Title, Button } from './styles';
 
 export const Courses = (props) => {
   return (
@@ -25,15 +25,6 @@ export const Courses = (props) => {
           ))
         }
       </Grid>
-      {/* <Long>
-        <CourseCard>
-          <Content>
-            <h4>{props.long.name}</h4>
-            <p>期間 : {props.long.long}</p>
-            <p>{props.long.description}</p>
-          </Content>
-        </CourseCard>
-      </Long> */}
     </Wrapper>
   );
 }
