@@ -2,10 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { Header } from 'components/theme';
 import { Container, Card } from 'components/common';
-import { ListItems, Targets } from '../../common/ListItems';
 import { Wrapper, Grid, DocWrapper, Top, Button } from './styles';
-import isshiki from 'assets/speakers-icon/isshiki-2.png'
-import seminarPDF from 'assets/pdf/cpp2021-short.pdf';
 
 export const Intro = (props) => {
   const description = "我が社ではDXや働き方の改革をテーマに定期的にZoomを用いたオンラインセミナーを無料で開催しています。"

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Container, Card } from 'components/common';
-import { ListItems, Targets } from '../../common/ListItems';
 import { Wrapper, CardWrapper, PersonInlineBlock, PDFInlineBlock } from './styles';
 
 export const Details = (props) => {
