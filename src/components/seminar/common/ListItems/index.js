@@ -46,18 +46,18 @@ const TargetWrapper = styled.div`
 `;
 
 
-export const Targets = (props) => {
+// export const Targets = (props) => {
 
-    return (
-        <Card pad='1rem'>
-            <TargetWrapper>
-                <h3>{props.title}</h3>
-                <ul>
-                    {props.data.map(item => {
-                        return <li>{item}</li>
-                    })}
-                </ul>
-            </TargetWrapper>
-        </Card>
-    )
-}
+//     return (
+//         <Card pad='1rem'>
+//             <TargetWrapper>
+//                 <h3>{props.title}</h3>
+//                 <ul>
+//                     {props.data.map(item => {
+//                         return <li>{item}</li>
+//                     })}
+//                 </ul>
+//             </TargetWrapper>
+//         </Card>
+//     )
+// }
