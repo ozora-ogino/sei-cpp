@@ -1,20 +1,15 @@
 ---
-title: Cal Poly Seminar ホームページを新しくしました
+title: New Home Page
 date: "2021-05-21"
 template: "news"
 draft: false
 slug: "launched"
 category: "Tech"
-description: "SeminarのHPを新しくしました。使用している技術スタックなど。"
+description: "SEI-CPP HPが新しくなりました。"
 socialImage: ""
 ---
 
-## 技術スタック
-React
 
-Gatsby
+SEI-CPPのHPが新しくなりました。
 
-Github Actions (CI/CD)
-
-Netlify (hosting)
-
+過去のHPは引き続き[こちら](https://sei-cpp.com)からアクセス可能です。

@@ -3,6 +3,8 @@ import { Link } from 'gatsby';
 import { Container, Card } from 'components/common';
 import { Wrapper, CardWrapper, PersonInlineBlock, PDFInlineBlock } from './styles';
 
+// TODO: Image in PDFInlineBlock doesn't work on Chrome browser.
+
 export const Details = (props) => {
   return (
     <Wrapper>

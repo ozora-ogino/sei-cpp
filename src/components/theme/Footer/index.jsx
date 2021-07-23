@@ -12,9 +12,9 @@ export const Footer = () => {
             © All rights are reserved | {new Date().getFullYear()} | Made with{' '}
             {' '}
             by{' '}
-            <a href="https://github.com/ozora-ogino" rel="noopener noreferrer" target="_blank">
-              SEI-CPP
-            </a>
+            {/* <a href="https://github.com/ozora-ogino" rel="noopener noreferrer" target="_blank"> */}
+            SEI-CPP
+            {/* </a> */}
           </span>
         </Details>
       </Flex>

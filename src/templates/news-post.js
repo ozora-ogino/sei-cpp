@@ -4,13 +4,20 @@ import { Header } from 'components/theme';
 import { Layout, SEO, Card } from 'components/common';
 import styled from 'styled-components';
 
-export const Wrapper = styled.div` 
+export const Wrapper = styled.div`
   text-align: center;
   align-contetns: center;
   vertical-align: middle;
-  margin: auto;
-  margin-top: 3rem;
-  max-width: 80%;
+  margin: 3rem auto;
+  max-width: 90%;
+   h1 {
+     color: var(--primary)
+   }
+
+   h2 {
+     color: var(--primary-light)
+   }
+
 `;
 export default function NewsPost({ data }) {
   const post = data.markdownRemark
