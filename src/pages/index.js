@@ -13,6 +13,9 @@ import disney from 'assets/company-logos/disney.png'
 import drivemode from 'assets/company-logos/drivemode.png'
 import esri from 'assets/company-logos/esri.png'
 import auriq from 'assets/company-logos/auriq.png'
+import salesforce from 'assets/company-logos/salesforce.png'
+import ibm from 'assets/company-logos/ibm.png'
+import cisco from 'assets/company-logos/cisco.png'
 import longimg from 'assets/illustrations/long-seminar.png'
 import shortimg from 'assets/illustrations/short-seminar.png'
 import onlineimg from 'assets/illustrations/online-cover.png'
@@ -28,6 +31,9 @@ export default ({ data }) => {
     { img: ms, size: "240" },
     { img: google, size: "100" },
     { img: amazon, size: "200" },
+    { img: salesforce, size: "200" },
+    { img: ibm, size: "200" },
+    { img: cisco, size: "200" },
     { img: uber, size: "200" },
     { img: disney, size: "240" },
     { img: drivemode, size: "240" },
@@ -47,7 +53,7 @@ export default ({ data }) => {
   const long =
   {
     name: '長期コース',
-    long: '期間 : 最長4週間',
+    long: '期間 : 8週間',
     img: longimg,
     description: 'ビジネスアナリスト、デザイナー、コンサルタントに関する知識を身につけます。',
     to: '/seminars/long',
