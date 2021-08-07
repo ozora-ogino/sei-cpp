@@ -12,8 +12,9 @@ export const Title = styled.div`
   text-align: center;
   padding: 1.8rem;
   h2 {
-    color: #37474f;
-    font-size: 22pt,
+    // color: #37474f;
+    color: white;
+    font-size: 20pt,
   }
 `;
 
@@ -46,7 +47,7 @@ export const Card = styled.div`
     color: #212121;
   }
 
-  
+
   a {
     color: #212121;
   }
@@ -58,7 +59,7 @@ export const Card = styled.div`
 
 export const Content = styled.div`
   // display:flex;
-  justify-content:center; 
+  justify-content:center;
   align-items: center;
   width: 100%;
   height: 100%;
@@ -73,12 +74,12 @@ export const Texts = styled.div`
 width: 100%;
 height: 100%;
 
-h4 { 
+h4 {
   color: #333333;
   margin: 0;
 }
 
-p { 
+p {
   color: #333333;
   margin: 0;
   margin-top: .7rem;

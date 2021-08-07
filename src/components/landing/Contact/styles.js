@@ -35,16 +35,3 @@ export const Details = styled.div`
     color: #707070;
   }
 `;
-
-export const Thumbnail = styled.div`
-  flex: 1;
-
-  @media (max-width: 960px) {
-    width: 100%;
-    margin-bottom: 2rem;
-  }
-
-  img {
-    width: 100%;
-  }
-`;

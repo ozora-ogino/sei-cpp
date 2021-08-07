@@ -1,52 +1,42 @@
 import styled from 'styled-components';
 
+export const Root = styled.div`
+  // background: var(--primary);
+  background: white;
+  }
+`;
+
+
 export const Wrapper = styled.div`
-  background-size: contain;
-  background-position: right top;
-  background-repeat: no-repeat;
+  height: 100%;
+  display: table;
   text-align: center;
-`;
-
-export const Cover = styled.div`
-  padding-bottom: 1rem;
-  .cov{
-    position: relative;
-  // h2 {
-  //   position: absolute:
-  //   left: 5rem;
-  //   top: 6rem;
-  // }
-  }
-  .cov h2 {
-  position: absolute;
-    width: 100%;
-    left: 0; 
-    top: calc(50% - 25px); 
-    text-align: center; 
-    font-weight: bold; 
-    font-size: 50px;
+  margin: auto;
   @media (max-width: 960px) {
-    font-size: 30px;
+  margin: .4rem;
   }
-  @media (max-width: 680px) {
-    font-size: 18px;
-  }
-}
 `;
-
 
 export const IntroWrapper = styled.div`
-  padding-top: 4rem;
+  width: 100%;
+  // padding-top: 6rem;
+  display: table-cell;
+  padding-right: 0;
+  margin-right: 0;
   align-items: center;
-  justify-content: space-between;
+  vertical-align: middle;
+  width: 1000px;
 
   @media (max-width: 960px) {
     flex-direction: column;
   }
 `;
 
+
 export const Details = styled.div`
-  flex: 1;
+padding-top: 4rem;
+padding-bottom: 4rem;
+  // flex: 1;
 
   @media (max-width: 960px) {
     width: 100%;
@@ -103,7 +93,8 @@ export const Details = styled.div`
   }
 
   p {
-    margin-bottom: 1rem;
+    margin: 1rem;
+    color:  black ;
     font-size: 14pt;
     font-weight: normal;
     color:#7c7c7c ;
@@ -136,14 +127,25 @@ export const Details = styled.div`
   }
 `;
 
-export const Thumbnail = styled.div`
-  flex: 1;
 
-  @media (max-width: 960px) {
-    width: 100%;
+export const AboutUs = styled.div`
+  margin: auto;
+  justify-content: middle;
+  display: flex;
+  .right {
+    flex: 1;
+  }
+  .left {
+    flex: 2;
+    height: 100%;
+    margin: auto;
+    padding-left: 2rem;
+    text-align: left;
+    justify-content: middle;
   }
 
-  img {
-    width: 100%;
+  h2 {
+    color: black;
+    text-align: left;
   }
 `;

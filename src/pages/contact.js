@@ -5,10 +5,11 @@ import { Contact } from 'components/contact'
 
 
 export default () => {
-  
+
   return (
-  <Layout>
-    <SEO />
-    <Contact />
-  </Layout>);
+    <Layout>
+      <SEO />
+      <Contact />
+    </Layout>
+  );
 };

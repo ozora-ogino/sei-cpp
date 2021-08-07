@@ -68,34 +68,3 @@ export const Details = styled.div`
     }
   }
 `;
-
-export const Contact = styled.div`
-margin-left: 1rem;
-  p {
-    margin-bottom: 1rem;
-    font-size: 14pt;
-    font-weight: normal;
-    color: #373737;
-
-    @media (max-width: 960px) {
-      mix-blend-mode: unset;
-    }
-
-    @media (max-width: 680px) {
-      font-size: 12pt;
-    }
-  }
-`;
-
-
-export const Thumbnail = styled.div`
-  flex: 1;
-
-  @media (max-width: 960px) {
-    width: 100%;
-  }
-
-  img {
-    width: 100%;
-  }
-`;

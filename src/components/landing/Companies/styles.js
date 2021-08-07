@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  border-top: 0.1px solid #dddddd;
-  border-bottom: 0.1px solid #dddddd;
   background-size: contain;
   background-position: right top;
   background-repeat: no-repeat;
@@ -73,18 +71,6 @@ export const Details = styled.div`
   }
 `;
 
-export const Thumbnail = styled.div`
-  flex: 1;
-
-  @media (max-width: 960px) {
-    width: 100%;
-  }
-
-  img {
-    width: 100%;
-  }
-`;
-
 export const LogoList = styled.div`
   padding-top: 1rem;
   height: 100%;
@@ -93,8 +79,9 @@ export const LogoList = styled.div`
 `;
 
 export const Logo = styled.div`
+  width: 12%;
   padding: 1rem;
-  display: inline-block; 
+  display: inline-block;
   margin: auto;
   vertical-align: middle;
 `;

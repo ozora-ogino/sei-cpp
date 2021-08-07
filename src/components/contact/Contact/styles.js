@@ -16,7 +16,7 @@ export const IntroWrapper = styled.div`
   @media (max-width: 960px) {
     flex-direction: column;
   }
-  
+
 `;
 
 export const Details = styled.div`
@@ -28,6 +28,7 @@ textarea {
   display: block;
   width: 100%;
 }
+
 ul {
   list-style: none;
   margin: 0;
@@ -37,6 +38,7 @@ ul {
 li {
   padding: 0.3em;
 }
+
 span {
   font-weight: 700;
   color: #373737;
@@ -47,8 +49,10 @@ span {
   font-size: 0.8rem;
   text-transform: uppercase;
 }
+
 input[type="submit"] {
-  background: #fc4366;
+  background: var(--secondary);
+  // background: #fc4366;
   // background: #fc4366;
   color: white;
   font-weight: 700;
@@ -161,47 +165,5 @@ textarea {
     @media (max-width: 680px) {
       font-size: 12pt;
     }
-  }
-`;
-
-
-export const Paragraph = styled.div`
-  margin-bottom: 1.5rem;
-`;
-
-
-export const Contact = styled.div`
-margin-left: 1rem;
-  p {
-    // margin-bottom: 1rem;
-    font-size: 14pt;
-    font-weight: normal;
-    color: #373737;
-
-    @media (max-width: 960px) {
-      mix-blend-mode: unset;
-    }
-
-    @media (max-width: 680px) {
-      font-size: 12pt;
-    }
-  }
-`;
-
-
-export const Thumbnail = styled.div`
-  flex: 1;
-  margin: 1.5rem;
-  @media (max-width: 960px) {
-    width: 100%;
-  }
-
-  img {
-    width: 100%;
-    margin: auto;
-  @media (max-width: 960px) {
-    width: 0%;
-    height: 0%;
-  }
   }
 `;

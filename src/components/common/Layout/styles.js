@@ -1,7 +1,18 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const Global = createGlobalStyle`
+
+
   html {
+
+    --primary: #004A3E;
+    --primary-dark: #003E34;
+    --primary-light: #005A4C;
+    --secondary: #eb4605;
+    --secondary-dark: #A74605;
+    --secondary-bg: #0005A4C;
+
+
     font-family: 'Roboto', Helvetica, sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -621,6 +632,7 @@ export const Global = createGlobalStyle`
 
     a {
       text-decoration: none;
+      color: var(--secondary);
     }
 
     input, select, textarea, button {

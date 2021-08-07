@@ -8,8 +8,8 @@ export const Wrapper = styled.div`
 
 
   ${({ desktop }) =>
-    desktop
-      ? `
+		desktop
+			? `
 			align-items: center;
 			display: flex;
 
@@ -25,7 +25,7 @@ export const Wrapper = styled.div`
 					}
 			}
 		`
-      : `
+			: `
 			padding: 3rem;
 			display: flex;
 			flex-direction: column;
@@ -39,3 +39,5 @@ export const Wrapper = styled.div`
 			}
 	`}
 `;
+
+
