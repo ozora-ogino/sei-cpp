@@ -44,7 +44,7 @@ const Cover = styled.div`
           font-size: 16pt;
       }
       @media (max-width: 1000px) {
-          font-size: 13pt;
+          font-size: 12pt;
       }
     }
   }
@@ -55,6 +55,9 @@ const Cover = styled.div`
     .letter-h2 {
       margin: auto;
       text-align: left;
+    }
+    button {
+      font-size: 14px;
     }
     h2 {
       font-size: 16pt;
@@ -75,8 +78,7 @@ export const Thumbnail = () => {
         <Fade bottom >
           <div className='top-message'>
             <div className='letter-h2'>
-              <h2>我々はSilicon Valleyのプロフェッショナルと共に</h2>
-              <h2>日本のDXを支援しています。</h2>
+              <h2>我々はSilicon Valleyのプロフェッショナルと共に日本のDXを支援しています。</h2>
             </div>
             <Link to={'/contact'}><Button>お問い合わせ</Button></Link>
           </div>
@@ -84,8 +86,8 @@ export const Thumbnail = () => {
         <img src={coverImg} />
         <div className='bottom-message'>
           <div className='letter-h2'>
-            <h2>我々はSilicon Valleyのプロフェッショナルと共に</h2>
-            <h2>日本のDXを支援しています。</h2>
+            <h2>我々はSilicon Valleyのプロフェッショナルと共に
+              日本のDXを支援しています。</h2>
             <Link to={'/contact'}><Button>お問い合わせ</Button></Link>
           </div>
         </div>

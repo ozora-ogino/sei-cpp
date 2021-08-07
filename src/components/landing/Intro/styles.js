@@ -110,7 +110,9 @@ padding-bottom: 4rem;
 
   .top-banner{
     margin: auto;
-    width: 60%;
+    margin-top: 1.4rem;
+    width: 90%;
+    max-width: 600px;
     display: flex;
     list-style: none;
     flex-wrap:wrap;
@@ -129,23 +131,45 @@ padding-bottom: 4rem;
 
 
 export const AboutUs = styled.div`
-  margin: auto;
-  justify-content: middle;
-  display: flex;
-  .right {
-    flex: 1;
-  }
-  .left {
-    flex: 2;
-    height: 100%;
+  @media (min-width: 680px) {
+    display: flex;
     margin: auto;
-    padding-left: 2rem;
-    text-align: left;
     justify-content: middle;
+    .right {
+      flex: 1;
+    }
+    .left {
+      flex: 2;
+      height: 100%;
+      margin: auto;
+      padding-left: 2rem;
+      text-align: left;
+      justify-content: middle;
+    }
+
+    h2 {
+      color: black;
+      text-align: left;
+    }
   }
 
-  h2 {
-    color: black;
-    text-align: left;
+  @media (max-width: 681px) {
+    h2 {
+      color: black;
+    }
+    p {
+      text-align: left;
+    }
+    .right {
+      display: none;
+    }
+    .left {
+      height: 100%;
+      margin: auto;
+      justify-content: middle;
+      border: 2px solid var(--primary);
+    }
+      margin-bottom: 1rem;
   }
+
 `;
