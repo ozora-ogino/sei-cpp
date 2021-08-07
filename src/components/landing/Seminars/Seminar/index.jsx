@@ -20,6 +20,7 @@ export const Seminar = (props) => {
                     </div>
                 </Content>
                 {/* <Link to={props.data.to}><Button>コースの詳細はこちら</Button></Link> */}
+                <Link to={props.data.to}><p>詳細</p></Link>
             </Card>
         </Wrapper >
     );
