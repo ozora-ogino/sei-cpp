@@ -60,7 +60,7 @@ const Cover = styled.div`
       font-size: 14px;
     }
     h2 {
-      font-size: 16pt;
+      font-size: 14pt;
       margin: 0.5rem;
     }
 

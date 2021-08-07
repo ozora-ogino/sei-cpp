@@ -5,8 +5,10 @@ export const Wrapper = styled.div`
   text-align: center;
   max-width: 700px;
   margin: auto;
+  
   @media (max-width: 1260px) {
     max-width: 500px;
+    padding-bottom: 2rem;
   }
   }
 `;
@@ -16,6 +18,12 @@ export const Content = styled.div`
   height: 500px;
   padding-bottom: 2rem;
   min-height: 140px;
+  @media (max-width: 440px) {
+    height: 420px;
+  }
+  @media (min-width: 1940px) {
+    height: 620px;
+  }
 
   img {
     width: 100%;
@@ -23,9 +31,6 @@ export const Content = styled.div`
     // border-radius: .6rem  .6rem 0 0;
     transition-duration: 0.5s;
 
-  @media (max-width: 1260px) {
-
-  }
 
   img:hover{
     transform: scale(1.05);

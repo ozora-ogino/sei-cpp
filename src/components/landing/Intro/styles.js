@@ -167,7 +167,8 @@ export const AboutUs = styled.div`
       height: 100%;
       margin: auto;
       justify-content: middle;
-      border: 2px solid var(--primary);
+      border: 1.8px solid var(--primary);
+      border-radius: 5px;
     }
       margin-bottom: 1rem;
   }
