@@ -53,7 +53,7 @@ export default ({ data }) => {
   const long =
   {
     name: '長期コース',
-    long: '期間 : 8週間',
+    long: '期間 : 最長8週間',
     img: longimg,
     description: 'ビジネスアナリスト、デザイナー、コンサルタントに関する知識を身につけます。',
     to: '/seminars/long',
