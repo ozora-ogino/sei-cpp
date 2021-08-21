@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
   text-align: center;
   max-width: 700px;
   margin: auto;
-  
+
   @media (max-width: 1260px) {
     max-width: 500px;
     padding-bottom: 2rem;
@@ -16,7 +16,7 @@ export const Wrapper = styled.div`
 export const Content = styled.div`
   // padding: 1.4rem 0;
   height: 500px;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   min-height: 140px;
   @media (max-width: 440px) {
     height: 420px;

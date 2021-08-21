@@ -55,7 +55,7 @@ export default ({ data }) => {
     name: '長期コース',
     long: '期間 : 最長8週間',
     img: longimg,
-    description: 'ビジネスアナリスト、デザイナー、コンサルタントに関する知識を身につけます。',
+    description: 'イノベーションを起こすための手法や理論を体系的にお伝えします。２ヶ月間にわたる実践を通して日本の未来を切り開くイノベーターを育てます。',
     to: '/seminars/long',
   }
 
@@ -64,7 +64,7 @@ export default ({ data }) => {
     name: '短期エグゼクティブコース',
     long: '期間 : 2週間',
     img: shortimg,
-    description: '短期間で最新のビジネスの手法や知識、技術をみにつけることができます。',
+    description: 'DXがどのような効果をもたらすかを知らずに推進責任者になっていませんか？ 視察や見学に留まらない、実践的なDXの学びをエグゼクティブへ提供します',
     to: 'seminars/short',
   }
 
