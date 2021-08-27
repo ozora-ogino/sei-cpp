@@ -38,8 +38,12 @@ export const Contact = () => {
       <IntroWrapper as={Container}>
         <Details>
           <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-            <h3 style={{ textAlign: "center" }}>お問い合わせいただきありがとうございます。</h3>
-            <h3 style={{ textAlign: "center" }}>どのような内容でも構いませんのでお問い合わせください。</h3>
+            <div style={{ textAlign: "center" }}>
+              <h3>お問い合わせいただきありがとうございます。</h3>
+              <h3>どのような内容でも構いませんのでお問い合わせください。</h3>
+              <p>受付先: カリフォルニア州立工科大学ポモナ校</p>
+              <p>担当者: 一色 浩一郎教授</p>
+            </div>
             <input type="hidden" name="form-name" value="contact" />
             <input type="hidden" name="bot-field" />
             <ul>
