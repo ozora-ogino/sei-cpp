@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import styled from 'styled-components';
+import { Card } from 'components/common';
 import coverImg from 'assets/illustrations/nasa.svg'
 
 
@@ -94,14 +96,16 @@ export const Nasa = () => {
             <h2>NASA × Cal Poly</h2>
             <p>NASAと共同で皆様のイノベーションを支援します。</p>
           </div>
-          <a href={'https://www.cpp.edu/cba/nasacpp/index.shtml'}><p>Cal Poly HP</p></a>
+          {/* <a href={'https://www.cpp.edu/cba/nasacpp/index.shtml'}><p>Cal Poly HP</p></a> */}
+          <Link href='nasa'><p>詳細はこちら</p></Link>
         </div>
         <img src={coverImg} />
         <div className='bottom-message'>
           <div className='letter-h2'>
             <h2>NASA × CPP</h2>
             <p>NASAと共同で皆様のイノベーションを支援します。</p>
-            <a href={'https://www.cpp.edu/cba/nasacpp/index.shtml'}><p>Cal Poly HP</p></a>
+            {/* <a href={'https://www.cpp.edu/cba/nasacpp/index.shtml'}><p>Cal Poly HP</p></a> */}
+            <Link href='nasa'><p>詳細はこちら</p></Link>
           </div>
         </div>
       </div>
