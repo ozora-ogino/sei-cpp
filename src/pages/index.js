@@ -73,20 +73,20 @@ export default ({ data }) => {
     'https://www.youtube.com/embed/C9xc0dRr5Xo',
   ];
 
-  const testimonials = [
-    {
-      img: google,
-      name: 'google',
-      company: 'google',
-      message: 'google message',
-    },
-    {
-      img: google,
-      name: 'google',
-      company: 'google',
-      message: 'google message',
-    },
-  ];
+  // const testimonials = [
+  //   {
+  //     img: google,
+  //     name: 'google',
+  //     company: 'google',
+  //     message: 'google message',
+  //   },
+  //   {
+  //     img: google,
+  //     name: 'google',
+  //     company: 'google',
+  //     message: 'google message',
+  //   },
+  // ];
 
   return (
     <Layout>
