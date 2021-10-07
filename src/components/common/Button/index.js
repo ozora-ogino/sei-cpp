@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Button = styled.button`
   cursor: pointer;
@@ -19,7 +19,7 @@ export const Button = styled.button`
   &:focus {
     outline: none;
   }
-    // transition: 0.1s ease-in;
+  // transition: 0.1s ease-in;
   transition-duration: 0.1s;
   &:hover {
     // background: #0089ff;

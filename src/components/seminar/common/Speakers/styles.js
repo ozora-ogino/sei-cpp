@@ -1,7 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-export const Top = styled.div`
-`;
+export const Top = styled.div``;
 
 export const Wrapper = styled.div`
   padding-bottom: 4rem;
@@ -13,7 +12,7 @@ export const Title = styled.div`
   h2 {
     // color: #37474f;
     color: white;
-    font-size: 20pt,
+    font-size: 20pt;
   }
 `;
 
@@ -23,7 +22,7 @@ export const Grid = styled.div`
   align-items: center;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 8fr;
-  gap: 4.0rem 1.0rem;
+  gap: 4rem 1rem;
   margin-bottom: 1rem;
 
   @media (max-width: 960px) {
@@ -37,7 +36,7 @@ export const Grid = styled.div`
 
 export const Content = styled.div`
   // display:flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
@@ -49,17 +48,17 @@ export const Content = styled.div`
 `;
 
 export const Texts = styled.div`
-width: 100%;
-height: 100%;
+  width: 100%;
+  height: 100%;
 
-h4 {
-  color: #333333;
-  margin: 0;
-}
+  h4 {
+    color: #333333;
+    margin: 0;
+  }
 
-p {
-  color: #333333;
-  margin: 0;
-  margin-top: .7rem;
-}
+  p {
+    color: #333333;
+    margin: 0;
+    margin-top: 0.7rem;
+  }
 `;

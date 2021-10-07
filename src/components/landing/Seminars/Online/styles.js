@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
   padding-bottom: 4rem;
@@ -69,7 +69,7 @@ export const Button = styled.button`
     outline: none;
   }
 
-  &:hover{
+  &:hover {
     padding: 0.4rem 2.8rem;
     background: #0089ff;
     transition: 0.1s ease-in;

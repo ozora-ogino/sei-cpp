@@ -1,7 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-export const Top = styled.div`
-`;
+export const Top = styled.div``;
 
 export const Wrapper = styled.div`
   padding-bottom: 4rem;
@@ -13,7 +12,7 @@ export const Title = styled.div`
   padding: 1.8rem;
   h2 {
     color: #37474f;
-    font-size: 22pt,
+    font-size: 22pt;
   }
 `;
 
@@ -23,7 +22,7 @@ export const Grid = styled.div`
   align-items: center;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: 8fr;
-  gap: 4.0rem 1.0rem;
+  gap: 4rem 1rem;
   margin-bottom: 1rem;
 
   @media (max-width: 960px) {
@@ -91,7 +90,7 @@ export const Button = styled.button`
     outline: none;
   }
 
-  &:hover{
+  &:hover {
     padding: 0.4rem 2.8rem;
     background: #0089ff;
     transition: 0.1s ease-in;

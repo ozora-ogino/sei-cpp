@@ -1,15 +1,14 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
   a {
-	color: #000;
+    color: #000;
     text-decoration: none;
   }
 
-
   ${({ desktop }) =>
-		desktop
-			? `
+    desktop
+      ? `
 			align-items: center;
 			display: flex;
 
@@ -25,7 +24,7 @@ export const Wrapper = styled.div`
 					}
 			}
 		`
-			: `
+      : `
 			padding: 3rem;
 			display: flex;
 			flex-direction: column;
@@ -39,5 +38,3 @@ export const Wrapper = styled.div`
 			}
 	`}
 `;
-
-

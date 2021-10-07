@@ -3,8 +3,8 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 import { Container } from 'components/common';
 
-export const Strong = (props) => {
-	const Wrapper = styled.div`
+export const Strong = props => {
+  const Wrapper = styled.div`
   text-align: center;
   img {
     max-width: 420px;
@@ -46,24 +46,29 @@ export const Strong = (props) => {
     }
   }
 `;
-	return (
-		<div style={{ background: 'white' }}>
-			<Wrapper as={Container}>
-				<div className='flex-item top'>
-					<h3>{props.title}</h3>
-					{props.data.map((item) => {
-						return <p>{item}</p>
-					})}
-					<Link href={props.linkPDF}><p>資料はこちら</p></Link>
-				</div>
-				<img src={props.img} />
-				<div className='flex-item bottom'>
-					<h3>{props.title}</h3>
-					{props.data.map((item) => {
-						return <p>{item}</p>
-					})}
-				</div>
-			</Wrapper>
-		</div>
-	)
-}
+  return (
+    <div style={{ background: 'white' }}>
+      <Wrapper as={Container}>
+        <div className="flex-item top">
+          <h3>{props.title}</h3>
+          {props.data.map(item => (
+            <p>{item}</p>
+          ))}
+          <Link href={props.linkPDF}>
+            <p>資料はこちら</p>
+          </Link>
+        </div>
+        <img src={props.img} />
+        <div className="flex-item bottom">
+          <h3>{props.title}</h3>
+          {props.data.map(item => (
+            <p>{item}</p>
+          ))}
+          <Link href={props.linkPDF}>
+            <p>資料はこちら</p>
+          </Link>
+        </div>
+      </Wrapper>
+    </div>
+  );
+};

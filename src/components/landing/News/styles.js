@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Top = styled.div`
   // background: var(--primary);
@@ -16,8 +16,8 @@ export const Title = styled.div`
     // color: white;
     font-size: 24pt;
     media (max-width: 680px) {
-    font-size: 20pt;
-  }
+      font-size: 20pt;
+    }
   }
 `;
 
@@ -86,13 +86,12 @@ export const Button = styled.button`
     outline: none;
   }
 
-  &:hover{
+  &:hover {
     // padding: 0.4rem 2.8rem;
     // background: #0089ff;
     background: var(--secondary-dark);
     transition: 0.1s ease-in;
   }
-
 
   &:disabled {
     background: gray;

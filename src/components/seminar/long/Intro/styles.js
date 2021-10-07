@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
   padding: 4rem;
@@ -10,7 +10,7 @@ export const Title = styled.div`
   padding: 1.8rem;
   h2 {
     color: #37474f;
-    font-size: 22pt,
+    font-size: 22pt;
   }
 `;
 
@@ -22,7 +22,7 @@ export const Grid = styled.div`
   align-items: center;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 8fr;
-  gap: 4.0rem 4.0rem;
+  gap: 4rem 4rem;
 
   @media (max-width: 960px) {
     grid-template-columns: repeat(1, 1fr);
@@ -59,7 +59,6 @@ export const Content = styled.div`
   min-height: 80px;
 `;
 
-
 export const Button = styled.button`
   cursor: pointer;
   border-radius: 3px;
@@ -80,7 +79,7 @@ export const Button = styled.button`
     outline: none;
   }
 
-  &:hover{
+  &:hover {
     background: #0089ff;
     transition: 0.1s ease-in;
   }
@@ -96,9 +95,8 @@ export const Button = styled.button`
 	`}
 `;
 
-
 export const DocWrapper = styled.div`
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   padding: 0 2rem;
   padding-top: 2rem;
@@ -109,7 +107,7 @@ export const DocWrapper = styled.div`
   }
 
   @media (min-width: 960px) {
-    display:flex;
+    display: flex;
     img {
       flex: 1;
     }
@@ -117,7 +115,6 @@ export const DocWrapper = styled.div`
       flex: 4;
     }
   }
-
 
   h3 {
     color: #212121;
@@ -140,10 +137,10 @@ export const DocWrapper = styled.div`
     border-radius: 0;
     border: none;
   }
-`
+`;
 
 export const PDFWrapper = styled.div`
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   padding: 0 2rem;
   // padding-top: 2rem;
@@ -170,4 +167,4 @@ export const PDFWrapper = styled.div`
     border-radius: 0;
     border: none;
   }
-`
+`;

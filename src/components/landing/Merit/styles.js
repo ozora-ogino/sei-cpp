@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
   padding-top: 4rem;
@@ -13,24 +13,21 @@ export const Wrapper = styled.div`
   }
 `;
 
-
 export const Title = styled.div`
-padding-bottom: .3rem;
-background: /* gradient can be an image */
-  linear-gradient(
-    to left,
-    #2196f3, #e91e63
-  )
-  left
-  bottom
-  no-repeat;
-background-size:100% 2px
+  padding-bottom: 0.3rem;
+  background: /* gradient can be an image */ linear-gradient(
+      to left,
+      #2196f3,
+      #e91e63
+    )
+    left bottom no-repeat;
+  background-size: 100% 2px;
 `;
 
 export const IntroWrapper = styled.div`
-display: table-cell;
-vertical-align: middle;
-align-items: center;
+  display: table-cell;
+  vertical-align: middle;
+  align-items: center;
   @media (max-width: 960px) {
   }
 `;
@@ -42,8 +39,8 @@ export const Card = styled.div`
   border-image-slice: 1;
   border-width: 5px;
   border-image-source: linear-gradient(to left, #2196f3, #e91e63);
-  -webkit-box-shadow: 0px 3px 17px -2px rgba(0,0,0,0.13);
-  border-radius: .3rem;
+  -webkit-box-shadow: 0px 3px 17px -2px rgba(0, 0, 0, 0.13);
+  border-radius: 0.3rem;
   padding: 2rem;
 `;
 
@@ -107,7 +104,7 @@ export const Details = styled.div`
     margin: 1rem;
     font-size: 14pt;
     font-weight: normal;
-    color:  black ;
+    color: black;
     // color:#7c7c7c ;
 
     @media (max-width: 960px) {

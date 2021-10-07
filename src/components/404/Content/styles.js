@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
   padding-bottom: 4rem;
@@ -18,7 +18,6 @@ export const IntroWrapper = styled.div`
 `;
 
 export const Details = styled.div`
-
   @media (max-width: 960px) {
     width: 100%;
     margin-bottom: 2rem;
