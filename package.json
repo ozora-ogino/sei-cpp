@@ -85,9 +85,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:smakosh/gatsby-portfolio-dev.git"
+    "url": "git@github.com:ozora-ogino/sei-cpp.git"
   },
   "bugs": {
-    "url": "https://github.com/smakosh/gatsby-portfolio-dev/issues"
+    "url": "https://github.com/ozora-ogino/sei-cpp/issues"
   }
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import { Layout, SEO } from 'components/common';
-import { Intro, Merit, News, Companies, Thumbnail, Testimonials, Seminars, Videos, Nasa } from 'components/landing';
+import { Intro, News, Companies, Thumbnail, Seminars, Videos, Nasa } from 'components/landing';
 import { Header } from 'components/theme';
 
 import google from 'assets/company-logos/google.png';
@@ -19,11 +19,6 @@ import cisco from 'assets/company-logos/cisco.png';
 import longimg from 'assets/illustrations/long-seminar.png';
 import shortimg from 'assets/illustrations/short-seminar.png';
 import onlineimg from 'assets/illustrations/online-cover.png';
-
-/*
-  TODO: 2021/06/06
-    - Decide koe of participants from inet Shigitani-san, NTT DST Ueki-san Asia-kosoku Ogawa-san or Yuiko-bo
-*/
 
 export default ({ data }) => {
   const companies = [
@@ -94,7 +89,6 @@ export default ({ data }) => {
       <Header />
       <Thumbnail />
       <Intro />
-      {/* <Merit /> */}
       <Nasa />
       <Seminars long={long} short={short} online={online} />
       <News title="News" data={data.allMarkdownRemark.edges} />

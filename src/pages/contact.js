@@ -1,12 +1,10 @@
-import React from "react";
-import { Layout, SEO } from "components/common";
-import { Contact } from "components/contact";
+import React from 'react';
+import { Layout, SEO } from 'components/common';
+import { Contact } from 'components/contact';
 
-export default () => {
-  return (
-    <Layout>
-      <SEO />
-      <Contact />
-    </Layout>
-  );
-};
+export default () => (
+  <Layout>
+    <SEO />
+    <Contact />
+  </Layout>
+);
