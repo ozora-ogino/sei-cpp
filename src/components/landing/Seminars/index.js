@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import { Seminar } from "./Seminar";
+import { Seminar } from './Seminar';
 
 const Root = styled.div`
   //   background: var(--secondary-bg);
@@ -23,21 +23,14 @@ const Wrapper = styled.div`
   }
 `;
 
-export const Seminars = props => {
-  return (
-    <Root>
-      <Wrapper>
+export const Seminars = ({ online, long, short }) => (
+  <Root>
+    <Wrapper>
+      {[online, long, short].map(d => (
         <div className="item">
-          <Seminar data={props.online} />
+          <Seminar data={d} />
         </div>
-        <div className="item">
-          <Seminar data={props.long} />
-        </div>
-        <div className="item">
-          <Seminar data={props.short} />
-        </div>
-      </Wrapper>
-      {/* <Online data={props.online} /> */}
-    </Root>
-  );
-};
+      ))}
+    </Wrapper>
+  </Root>
+);

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   padding-top: 4rem;
@@ -15,12 +15,7 @@ export const Wrapper = styled.div`
 
 export const Title = styled.div`
   padding-bottom: 0.3rem;
-  background: /* gradient can be an image */ linear-gradient(
-      to left,
-      #2196f3,
-      #e91e63
-    )
-    left bottom no-repeat;
+  background: /* gradient can be an image */ linear-gradient(to left, #2196f3, #e91e63) left bottom no-repeat;
   background-size: 100% 2px;
 `;
 

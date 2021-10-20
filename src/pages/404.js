@@ -1,6 +1,6 @@
-import React from "react";
-import { Layout, SEO } from "components/common";
-import { Content } from "components/404";
+import React from 'react';
+import { Layout, SEO } from 'components/common';
+import { Content } from 'components/404';
 
 export default () => (
   <Layout>
