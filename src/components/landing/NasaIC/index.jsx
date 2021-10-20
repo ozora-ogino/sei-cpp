@@ -2,9 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 import { Card } from 'components/common';
-import coverImg from 'assets/illustrations/nasa.svg'
-
-
+import coverImg from 'assets/illustrations/nasa.svg';
 
 const Cover = styled.div`
   background: var(--primary);
@@ -48,10 +46,10 @@ const Cover = styled.div`
       margin: 0.7rem;
 
       @media (max-width: 1240px) {
-          font-size: 24pt;
+        font-size: 24pt;
       }
       @media (max-width: 1000px) {
-          font-size: 13pt;
+        font-size: 13pt;
       }
     }
 
@@ -81,34 +79,33 @@ const Cover = styled.div`
     }
 
     @media (min-width: 681px) {
-    display: None;
+      display: None;
     }
-}
+  }
 `;
 
-
-export const Nasa = () => {
-  return (
-    <Cover>
-      <div className='cover'>
-        <div className='top-message'>
-          <div className='letter-h2'>
-            <h2>NASA × Cal Poly</h2>
-            <p>NASAと共同で皆様のイノベーションを支援します。</p>
-          </div>
-          {/* <a href={'https://www.cpp.edu/cba/nasacpp/index.shtml'}><p>Cal Poly HP</p></a> */}
-          <Link href='nasa'><p>詳細はこちら</p></Link>
+export const Nasa = () => (
+  <Cover>
+    <div className="cover">
+      <div className="top-message">
+        <div className="letter-h2">
+          <h2>NASA × Cal Poly</h2>
+          <p>NASAと共同で皆様のイノベーションを支援します。</p>
         </div>
-        <img src={coverImg} />
-        <div className='bottom-message'>
-          <div className='letter-h2'>
-            <h2>NASA × CPP</h2>
-            <p>NASAと共同で皆様のイノベーションを支援します。</p>
-            {/* <a href={'https://www.cpp.edu/cba/nasacpp/index.shtml'}><p>Cal Poly HP</p></a> */}
-            <Link href='nasa'><p>詳細はこちら</p></Link>
-          </div>
+        <Link href="nasa">
+          <p>詳細はこちら</p>
+        </Link>
+      </div>
+      <img src={coverImg} alt="nasa-logo" />
+      <div className="bottom-message">
+        <div className="letter-h2">
+          <h2>NASA × CPP</h2>
+          <p>NASAと共同で皆様のイノベーションを支援します。</p>
+          <Link href="nasa">
+            <p>詳細はこちら</p>
+          </Link>
         </div>
       </div>
-    </Cover>
-  );
-};
+    </div>
+  </Cover>
+);
