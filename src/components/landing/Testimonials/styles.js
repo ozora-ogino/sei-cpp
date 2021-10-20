@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   carousel-root {
@@ -67,7 +67,7 @@ export const Wrapper = styled.div`
   }
 
   .myCarousel p:before {
-    content: "“";
+    content: '“';
     color: #aaa;
     font-size: 26px;
     font-family: monospace;
@@ -75,7 +75,7 @@ export const Wrapper = styled.div`
   }
 
   .myCarousel p:after {
-    content: "”";
+    content: '”';
     color: #aaa;
     font-size: 26px;
     font-family: monospace;
