@@ -3,9 +3,7 @@ import { Link } from 'gatsby';
 import Fade from 'react-reveal/Fade';
 import { Button } from 'components/common';
 import styled from 'styled-components';
-import coverImg from 'assets/illustrations/cover-white-letter.svg'
-
-
+import coverImg from 'assets/illustrations/cover-white-letter.svg';
 
 const Cover = styled.div`
   background: var(--primary);
@@ -41,10 +39,10 @@ const Cover = styled.div`
       margin: 0.7rem;
 
       @media (max-width: 1240px) {
-          font-size: 16pt;
+        font-size: 16pt;
       }
       @media (max-width: 1000px) {
-          font-size: 12pt;
+        font-size: 12pt;
       }
     }
   }
@@ -65,33 +63,33 @@ const Cover = styled.div`
     }
 
     @media (min-width: 681px) {
-    display: None;
+      display: None;
     }
-}
+  }
 `;
 
-
-export const Thumbnail = () => {
-  return (
-    <Cover>
-      <div className='cover'>
-        <Fade bottom >
-          <div className='top-message'>
-            <div className='letter-h2'>
-              <h2>我々はSilicon Valleyのプロフェッショナルと共に日本のDXを支援しています。</h2>
-            </div>
-            <Link to={'/contact'}><Button>お問い合わせ</Button></Link>
+export const Thumbnail = () => (
+  <Cover>
+    <div className="cover">
+      <Fade bottom>
+        <div className="top-message">
+          <div className="letter-h2">
+            <h2>我々はSilicon Valleyのプロフェッショナルと共に日本のDXを支援しています。</h2>
           </div>
-        </Fade>
-        <img src={coverImg} />
-        <div className='bottom-message'>
-          <div className='letter-h2'>
-            <h2>我々はSilicon Valleyのプロフェッショナルと共に
-              日本のDXを支援しています。</h2>
-            <Link to={'/contact'}><Button>お問い合わせ</Button></Link>
-          </div>
+          <Link to="/contact">
+            <Button>お問い合わせ</Button>
+          </Link>
+        </div>
+      </Fade>
+      <img src={coverImg} alt="cover-img" />
+      <div className="bottom-message">
+        <div className="letter-h2">
+          <h2>我々はSilicon Valleyのプロフェッショナルと共に 日本のDXを支援しています。</h2>
+          <Link to="/contact">
+            <Button>お問い合わせ</Button>
+          </Link>
         </div>
       </div>
-    </Cover>
-  );
-};
+    </div>
+  </Cover>
+);

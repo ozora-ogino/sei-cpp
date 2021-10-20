@@ -20,8 +20,8 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/contents/news`,
-        name: 'news'
-      }
+        name: 'news',
+      },
     },
     {
       resolve: 'gatsby-plugin-feed',
@@ -31,24 +31,24 @@ module.exports = {
             site {
               siteMetadata {
                 site_url: url
-                title 
-                description: description 
+                title
+                description: description
               }
             }
           }
         `,
-        feeds: [{
-          serialize: ({ query: { site, allMarkdownRemark } }) => (
-            allMarkdownRemark.edges.map((edge) => ({
-              ...edge.node.frontmatter,
-              description: edge.node.frontmatter.description,
-              date: edge.node.frontmatter.date,
-              url: site.siteMetadata.site_url + edge.node.frontmatter.slug,
-              guid: site.siteMetadata.site_url + edge.node.frontmatter.slug,
-              custom_elements: [{ 'content:encoded': edge.node.html }]
-            }))
-          ),
-          query: `
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) =>
+              allMarkdownRemark.edges.map(edge => ({
+                ...edge.node.frontmatter,
+                description: edge.node.frontmatter.description,
+                date: edge.node.frontmatter.date,
+                url: site.siteMetadata.site_url + edge.node.frontmatter.slug,
+                guid: site.siteMetadata.site_url + edge.node.frontmatter.slug,
+                custom_elements: [{ 'content:encoded': edge.node.html }],
+              })),
+            query: `
               {
                 allMarkdownRemark(
                   limit: 100,
@@ -71,10 +71,11 @@ module.exports = {
                 }
               }
             `,
-          output: '/rss.xml',
-          title: config.defaultTitle,
-        }]
-      }
+            output: '/rss.xml',
+            title: config.defaultTitle,
+          },
+        ],
+      },
     },
     {
       resolve: 'gatsby-transformer-remark',
@@ -85,19 +86,19 @@ module.exports = {
             resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 960,
-              withWebp: true
-            }
+              withWebp: true,
+            },
           },
           {
             resolve: 'gatsby-remark-responsive-iframe',
-            options: { wrapperStyle: 'margin-bottom: 1.0725rem' }
+            options: { wrapperStyle: 'margin-bottom: 1.0725rem' },
           },
           'gatsby-remark-autolink-headers',
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
           'gatsby-remark-external-links',
-        ]
-      }
+        ],
+      },
     },
     {
       resolve: 'gatsby-plugin-nprogress',
@@ -151,6 +152,5 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
-
   ],
 };
