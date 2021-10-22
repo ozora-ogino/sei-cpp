@@ -18,7 +18,7 @@ import onlineimg from 'assets/illustrations/online-cover.png';
 import jimmy from 'assets/speakers-icon/jimmy.jpeg';
 import jimmyPDF from 'assets/pdf/jimmy-2021-spring.pdf';
 import jeffPDF from 'assets/pdf/jeff-2021-spring.pdf';
-import jeff from 'assets/speakers-icon/jeff.png';
+import jeff from 'assets/speakers-icon/jeff.jpg';
 
 // < ----------------------- pages/index.js ----------------------- >
 // Company's logos
@@ -96,8 +96,8 @@ export const onlineSeminarExamples = [
   },
   {
     title: '',
-    name: 'Jeff Stanford',
-    company: 'Drive mode',
+    name: 'Jeff Standard',
+    company: 'Drivemode',
     personImg: jeff,
     pdfImg: jeffPDF,
   },

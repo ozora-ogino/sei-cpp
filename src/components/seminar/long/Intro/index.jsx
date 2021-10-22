@@ -11,7 +11,7 @@ import styled from 'styled-components';
 
 import jimmy from 'assets/speakers-icon/jimmy.jpeg';
 import oishi from 'assets/speakers-icon/oishi.png';
-import jeff from 'assets/speakers-icon/jeff.png';
+import jeff from 'assets/speakers-icon/jeff.jpg';
 import luca from 'assets/speakers-icon/luca.png';
 import erik from 'assets/speakers-icon/erik.png';
 import pike from 'assets/speakers-icon/pike.png';
@@ -39,7 +39,7 @@ const participants = [
 const speakers = [
   { img: jimmy, name: 'Jimmy Onihsi', company: 'Microsoft', job: '' },
   { img: oishi, name: 'Takeshi Oishi', company: 'Google', job: '' },
-  { img: jeff, name: 'Jeff Stanford', company: 'Drive mode', job: '' },
+  { img: jeff, name: 'Jeff Standard', company: 'Drive mode', job: '' },
   { img: luca, name: 'Luca', company: 'Uber', job: '' },
 ];
 

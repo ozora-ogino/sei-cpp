@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card } from 'components/common';
 import styled from 'styled-components';
-// import jeff from 'assets/speakers-icon/jeff.png';
+// import jeff from 'assets/speakers-icon/jeff.jpg';
 import drivemodeLogo from 'assets/company-logos/drivemode.png';
 import logovistaLogo from 'assets/company-logos/logovista.png';
 
