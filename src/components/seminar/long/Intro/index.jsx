@@ -39,7 +39,7 @@ const participants = [
 const speakers = [
   { img: jimmy, name: 'Jimmy Onihsi', company: 'Microsoft', job: '' },
   { img: oishi, name: 'Takeshi Oishi', company: 'Google', job: '' },
-  { img: jeff, name: 'Jeff Standard', company: 'Drive mode', job: '' },
+  { img: jeff, name: 'Jeff Standard', company: 'Drivemode', job: '' },
   { img: luca, name: 'Luca', company: 'Uber', job: '' },
 ];
 
