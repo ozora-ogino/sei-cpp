@@ -1,12 +1,11 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import { Header } from 'components/theme';
 import { Container, Card } from 'components/common';
-import { Wrapper, Grid, DocWrapper, Top, Button } from './styles';
+import { Wrapper, Top } from './styles';
 
-export const Intro = (props) => {
-  const description = "我が社ではDXや働き方の改革をテーマに定期的にZoomを用いたオンラインセミナーを無料で開催しています。"
-  const point3 = "1.アメリカ式の対話型のセミナー 2.シリコンバレーで働く企業からIT専門の弁護士まで幅広い層 3."
+export const Intro = () => {
+  const description =
+    '我が社ではDXや働き方の改革をテーマに定期的にZoomを用いたオンラインセミナーを無料で開催しています。';
   return (
     <Top>
       <Header />

@@ -2,7 +2,7 @@ import React from 'react';
 import { Container } from 'components/common';
 import styled from 'styled-components';
 
-export const Targets = (props) => {
+export const Targets = props => {
   const Wrapper = styled.div`
   color: white;
   text-align: center;
@@ -36,13 +36,13 @@ export const Targets = (props) => {
     <div style={{ background: 'var(--primary)' }}>
       <Wrapper as={Container}>
         <img src={props.img} />
-        <div className='flex-item'>
+        <div className="flex-item">
           <h3>{props.title}</h3>
-          {props.data.map((item) => {
-            return <p>{item}</p>
-          })}
+          {props.data.map(item => (
+            <p>{item}</p>
+          ))}
         </div>
       </Wrapper>
     </div>
-  )
-}
+  );
+};

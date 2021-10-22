@@ -7,12 +7,7 @@ export const Footer = () => (
   <Wrapper>
     <Flex as={Container}>
       <Details>
-        <span>
-          © All rights are reserved | {new Date().getFullYear()} | Made with by{' '}
-          {/* <a href="https://github.com/ozora-ogino" rel="noopener noreferrer" target="_blank"> */}
-          SEI-CPP
-          {/* </a> */}
-        </span>
+        <span>© All rights are reserved | {new Date().getFullYear()} | Made with by SEI-CPP</span>
       </Details>
     </Flex>
   </Wrapper>

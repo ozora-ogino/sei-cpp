@@ -51,23 +51,13 @@ const teachers = [
   // { img: mohammad, name: 'Mohammad Salehan', job: 'BI/Analytics ' },
 ];
 
-export const Intro = props => (
+export const Intro = () => (
   <div>
     <Header />
     <Wrapper as={Container}>
       <h1>長期セミナー</h1>
     </Wrapper>
-    <DocWrapper as={Container}>
-      {/* <img src={isshiki} /> */}
-      {/* <div>
-          <p>
-            本セミナーはロサンゼルスにあるCal Poly Pomona校を拠点として行います。
-            Cal PolyはUberをはじめ多くの事業を育んできました。
-            セミナーでは大学からだけではなく企業からも講演者をお招きして今起きている<span style={{ fontWeight: 'bold' }}>Disruption（破壊的創造）</span>、
-            今後予想されるDisruptionを支える最新技術をお伝えし、御社のDXをサポート致します。
-          </p>
-        </div> */}
-    </DocWrapper>
+    <DocWrapper as={Container}></DocWrapper>
     <Targets data={participants} title="本セミナーの対象者" img={people} />
     <Strong data={features} title="セミナーの特徴" img={strong} linkPDF={seminarPDF} />
     <div style={{ background: 'white' }}></div>
