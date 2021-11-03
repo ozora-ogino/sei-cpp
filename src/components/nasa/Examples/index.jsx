@@ -15,13 +15,15 @@ const Root = styled.div`
 const drivemode = {
   logo: drivemodeLogo,
   companyName: 'Drivemode',
-  description: 'Nasa Incubation Centerのおかげで開発コストを節約し成功を収めることができました。',
+  description:
+    'CalPolyで多くの事業の立ち上げを経験後、世界初のスマホナビを開発。現在はHondaの子会社としてシリコンバレーを拠点としてホンダ研究所で活躍している。',
 };
 
 const logovista = {
   logo: logovistaLogo,
   companyName: 'LogoVista',
-  description: 'コスト、時間を抑え迅速に開発を進めることができました。',
+  description:
+    'LogoVistaは日本企業の大きな課題であった海外マーケティングをNASA-CPPを利用することで克服し、世界市場への第一歩を踏み出すことに成功しました。',
 };
 
 export const Examples = ({ examples }) => (
