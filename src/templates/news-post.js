@@ -1,8 +1,8 @@
-import React from "react";
-import { graphql } from "gatsby";
-import { Header } from "components/theme";
-import { Layout, SEO, Card } from "components/common";
-import styled from "styled-components";
+import React from 'react';
+import { graphql } from 'gatsby';
+import { Header } from 'components/theme';
+import { Layout, SEO, Card } from 'components/common';
+import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   text-align: center;
@@ -28,7 +28,7 @@ export default function NewsPost({ data }) {
       <Wrapper>
         <Card pad="4rem">
           <h1>{post.frontmatter.title}</h1>
-          <p style={{ marginBottom: "3rem" }}>{post.frontmatter.date}</p>
+          <p style={{ marginBottom: '3rem' }}>{post.frontmatter.date}</p>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </Card>
       </Wrapper>
