@@ -12,4 +12,4 @@ socialImage: ""
 
 SEI-CPPのHPが新しくなりました。
 
-過去のHPは引き続き[こちら](/src/assets/pdf/cpp2022_sprint.pdf)からアクセス可能です。
+過去のHPは引き続き[こちら](https://sei-cpp.com)からアクセス可能です。
