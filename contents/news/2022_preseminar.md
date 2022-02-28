@@ -15,7 +15,6 @@ Microsoft本社、Google本社勤務の方などアメリカでグローバル�
 
 ぜひご参加ください！
 
-
 日時：2022年4月20日（水）- 21日（木）
 
 開催方法：Zoomによるウェビナー形式
@@ -24,4 +23,4 @@ Microsoft本社、Google本社勤務の方などアメリカでグローバル�
 
 参加登録フォーム：https://forms.gle/Xjuf6YrBYGTBRCJP6
 
-資料：[こちら（PDF）](/src/assets/pdf/cpp2022_sprint.pdf)
+資料：[こちら（PDF）](https://raw.githubusercontent.com/ozora-ogino/sei-cpp/main/src/assets/pdf/cpp2022_sprint.pdf)
